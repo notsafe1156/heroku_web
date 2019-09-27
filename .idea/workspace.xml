@@ -48,10 +48,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
     </key>
   </component>
@@ -111,7 +113,7 @@
       <workItem from="1569500381794" duration="17000" />
       <workItem from="1569500668902" duration="1531000" />
       <workItem from="1569552541990" duration="57000" />
-      <workItem from="1569570914787" duration="2629000" />
+      <workItem from="1569570914787" duration="3916000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1569571140981</created>
@@ -148,7 +150,49 @@
       <option name="project" value="LOCAL" />
       <updated>1569575595575</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update Procfile">
+      <created>1569575911900</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1569575911900</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update index.php">
+      <created>1569576086861</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1569576086861</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update Procfile">
+      <created>1569576154556</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1569576154556</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update index.php">
+      <created>1569576470088</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1569576470088</updated>
+    </task>
+    <task id="LOCAL-00010" summary="change name">
+      <created>1569576908502</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1569576908502</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update">
+      <created>1569577011151</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1569577011151</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +200,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="update Procfile" />
+    <MESSAGE value="update index.php" />
+    <MESSAGE value="change name" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="567" y="347" key="FileChooserDialogImpl" />
