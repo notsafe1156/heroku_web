@@ -1,1 +1,1 @@
-<?php echo "hello world"; ?>
+<?php header( 'Location: index.html' ) ; ?>
