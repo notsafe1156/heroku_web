@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/vendor/jquery-2.2.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/vendor/jquery-2.2.3.min.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,13 +60,13 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -128,6 +126,7 @@
       <workItem from="1569726936624" duration="21000" />
       <workItem from="1569727870849" duration="1588000" />
       <workItem from="1569737366267" duration="2457000" />
+      <workItem from="1569740032539" duration="1242000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1569571140981</created>
@@ -325,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569739510332</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="update">
+      <created>1569740067578</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1569740067578</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

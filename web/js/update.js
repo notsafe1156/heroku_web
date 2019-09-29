@@ -7,16 +7,11 @@ $(document).ready(function ()
     success: function(Data)          
     {  
      var NumOfData = Data.length; 
-     var search = "首爾";
       for(i=0;i<=NumOfData;i++){
         var id = Data[i]["id"];   
         var title = Data[i]["title"];    
         var link = Data[i]["link"] ;
         var text = Data[i]["text"];
-
-        if(text.indexOf(search) >= 0 ){
-         alert('Data['+i+']["text"]'); 
-        }
 
         var img = Data[i]["images"].split(",");
 
