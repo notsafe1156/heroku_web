@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="" />
+    <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,23 +37,6 @@
       </set>
     </option>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
-    <include_path>
-      <path value="$PROJECT_DIR$/vendor/fancybox/dist" />
-      <path value="$PROJECT_DIR$/vendor/bootstrap/js" />
-      <path value="$PROJECT_DIR$/vendor/bootstrap/css" />
-      <path value="$PROJECT_DIR$/vendor/bootstrap/fonts" />
-      <path value="$PROJECT_DIR$/vendor/jquery-ui/images" />
-      <path value="$PROJECT_DIR$/vendor/sanzzy-map/dist" />
-      <path value="$PROJECT_DIR$/vendor/WOW-master/css" />
-      <path value="$PROJECT_DIR$/vendor/WOW-master/dist" />
-      <path value="$PROJECT_DIR$/vendor/OwlCarousel2/dist" />
-      <path value="$PROJECT_DIR$/vendor/Camera-master/css" />
-      <path value="$PROJECT_DIR$/vendor/Camera-master/images" />
-      <path value="$PROJECT_DIR$/vendor/Camera-master/scripts" />
-      <path value="$PROJECT_DIR$/vendor/bootstrap-select-1.10.0/dist" />
-    </include_path>
-  </component>
   <component name="ProjectId" id="1RHzuPLxgtKxTAkNqxU9yLYZ9j8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -76,6 +61,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -139,7 +125,7 @@
       <workItem from="1569581499193" duration="30000" />
       <workItem from="1569726936624" duration="21000" />
       <workItem from="1569727870849" duration="1588000" />
-      <workItem from="1569737366267" duration="1844000" />
+      <workItem from="1569737366267" duration="2089000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1569571140981</created>
@@ -323,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569739102018</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="update">
+      <created>1569739266262</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1569739266262</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
