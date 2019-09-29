@@ -35,6 +35,23 @@
       </set>
     </option>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/fancybox/dist" />
+      <path value="$PROJECT_DIR$/vendor/bootstrap/js" />
+      <path value="$PROJECT_DIR$/vendor/bootstrap/css" />
+      <path value="$PROJECT_DIR$/vendor/bootstrap/fonts" />
+      <path value="$PROJECT_DIR$/vendor/jquery-ui/images" />
+      <path value="$PROJECT_DIR$/vendor/sanzzy-map/dist" />
+      <path value="$PROJECT_DIR$/vendor/WOW-master/css" />
+      <path value="$PROJECT_DIR$/vendor/WOW-master/dist" />
+      <path value="$PROJECT_DIR$/vendor/OwlCarousel2/dist" />
+      <path value="$PROJECT_DIR$/vendor/Camera-master/css" />
+      <path value="$PROJECT_DIR$/vendor/Camera-master/images" />
+      <path value="$PROJECT_DIR$/vendor/Camera-master/scripts" />
+      <path value="$PROJECT_DIR$/vendor/bootstrap-select-1.10.0/dist" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1RHzuPLxgtKxTAkNqxU9yLYZ9j8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -58,6 +75,9 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
@@ -119,7 +139,7 @@
       <workItem from="1569581499193" duration="30000" />
       <workItem from="1569726936624" duration="21000" />
       <workItem from="1569727870849" duration="1588000" />
-      <workItem from="1569737366267" duration="742000" />
+      <workItem from="1569737366267" duration="999000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1569571140981</created>
@@ -275,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569738003289</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="update">
+      <created>1569738355452</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1569738355452</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
