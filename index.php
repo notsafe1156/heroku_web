@@ -1,2 +1,2 @@
-<?php header( 'Location: /web/index.html' ) ;  ?>
-
+<?php header( 'Location: /web/client/index.html' ) ;  ?>
+<?php header( 'Location: /web/client/index.html' ) ;  ?>
