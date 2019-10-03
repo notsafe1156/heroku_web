@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,7 +10,8 @@
     <title>Checkout example · Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -31,65 +33,66 @@
 
     <script src="jquery-3.4.1.js"></script>
 </head>
+
 <body class="bg-light">
-<div class="container">
-    <div class="py-5 text-center">
-        <h2>Modify</h2>
+    <div class="container">
+        <div class="py-5 text-center">
+            <h2>Modify</h2>
+        </div>
     </div>
-</div>
-<div class="col-md-8 order-md-1">
-    <div>
-        <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="location.href='styles.html'">返回</button>
-    </div>
+    <div class="col-md-8 order-md-1">
+        <div>
+            <button class="btn btn-primary btn-lg btn-block" type="submit"
+                onclick="location.href='test.html'">返回</button>
+        </div>
 
-    <form class="needs-validation" novalidate>
-        <div class="row">
+        <form class="needs-validation" novalidate>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <label for="author">author</label>
+                    <input type="text" class="form-control" id="author" readonly="readonly" required>
+                    <label for="category">category</label>
+                    <input type="text" class="form-control" id="category" readonly="readonly" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="Title">Title</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="title" readonly="readonly" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="time">Time</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="time" readonly="readonly" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="link">Link<span class="text-muted"></span></label>
+                <input type="email" class="form-control" id="link" readonly="readonly">
+            </div>
+            <div class="mb-3">
+                <label for="images">images</label>
+                <textarea type="text" class="form-controli" id="images" readonly="readonly" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="text">text <span class="text-muted"></span></label>
+                <textarea type="text" class="form-controlt" id="text" readonly="readonly"></textarea>
+            </div>
             <div class="col-md-3 mb-3">
-                <label for="id">ID</label>
-                <input type="text" class="form-control" id="id" readonly="readonly" required>
-                <label for="author">author</label>
-                <input type="text" class="form-control" id="author" readonly="readonly" required>
-                <label for="category">category</label>
-                <input type="text" class="form-control" id="category" readonly="readonly" required>
+                <label for="tag">tag</label>
+                <input type="text" class="form-control" id="tag" required>
             </div>
-        </div>
-        <div class="mb-3">
-            <label for="Title">Title</label>
-            <div class="input-group">
-                <input type="text" class="form-control" id="title" readonly="readonly" required>
+            <div class="col-md-3 mb-3">
+                <input type="checkbox" id="display" value="remember-me">display
             </div>
-        </div>
-        <div class="mb-3">
-            <label for="time">Time</label>
-            <div class="input-group">
-                <input type="text" class="form-control" id="time" readonly="readonly" required>
-            </div>
-        </div>
-        <div class="mb-3">
-            <label for="link">Link<span class="text-muted"></span></label>
-            <input type="email" class="form-control" id="link" readonly="readonly">
-        </div>
-        <div class="mb-3">
-            <label for="images">images</label>
-            <textarea  type="text" class="form-controli" id="images" readonly="readonly" required></textarea>
-        </div>
-        <div class="mb-3">
-            <label for="text">text <span class="text-muted"></span></label>
-            <textarea  type="text" class="form-controlt" id="text" readonly="readonly"></textarea>
-        </div>
-        <div class="col-md-3 mb-3">
-            <label for="tag">tag</label>
-            <input type="text" class="form-control" id="tag" required>
-        </div>
-        <div class="col-md-3 mb-3">
-            <input type="checkbox" id="display" value="remember-me">display
-        </div>
 
-    </form>
-    <div>
-            <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="location.href='styles.html'">確定</button>
+        </form>
+        <div>
+            <button class="btn btn-primary btn-lg btn-block" type="submit"
+                onclick="location.href='test.html'">確定</button>
         </div>
-</div>
+    </div>
 </body>
 
 <script>
@@ -98,7 +101,6 @@
     $(function () {
         var url = window.location.search;
         var ID = url.substr(4);
-        alert(ID);
         $.ajax({
             type: 'get',
             data: {
@@ -125,5 +127,5 @@
         });
     });
 </script>
-</html>
 
+</html>
