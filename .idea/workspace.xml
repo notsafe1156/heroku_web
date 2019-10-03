@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/server/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/server/form-validation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/server/jquery-3.4.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/server/modify.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,13 +71,14 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\server" />
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -146,7 +141,7 @@
       <workItem from="1569740032539" duration="1242000" />
       <workItem from="1569743072270" duration="1966000" />
       <workItem from="1569757429418" duration="854000" />
-      <workItem from="1570102913350" duration="2425000" />
+      <workItem from="1570102913350" duration="2685000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1569571140981</created>
@@ -400,7 +395,28 @@
       <option name="project" value="LOCAL" />
       <updated>1570105199552</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="update">
+      <created>1570105374535</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1570105374535</updated>
+    </task>
+    <task id="LOCAL-00038" summary="update">
+      <created>1570105462524</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1570105462524</updated>
+    </task>
+    <task id="LOCAL-00039" summary="update">
+      <created>1570105549144</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1570105549144</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
