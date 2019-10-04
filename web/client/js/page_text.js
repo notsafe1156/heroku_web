@@ -6,7 +6,7 @@ $(document).ready(function ()
   id = url.searchParams.get('id');
 
   $.ajax({                                    
-    url: 'https://djangotest1156.herokuapp.com/api/test1/raw_sql_query/',
+    url: 'https://djangotest1156.herokuapp.com/api/RSS/raw_sql_query/',
     type: "GET",                                   
     dataType: 'json',   
     data:{"id":id},            
