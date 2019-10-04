@@ -1,70 +1,40 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-
-    <title>Floating labels example · Bootstrap</title>
-    <script src="jquery-3.4.1.js"></script>
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="floating-labels.css" rel="stylesheet">
+        <link href="bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <script src="jquery-3.4.1.js"></script>
+        <link href="floating-labels.css" rel="stylesheet">
 </head>
-
 <body>
-    <form class="form-signin">
-        <div class="text-center mb-4">
+<form class="form-signin" >
+    <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-normal">登入</h1>
+    </div>
+    <div class="form-label-group">
+        <label for="inputaccount">Account</label>
+        <input type="text" id="inputaccount" class="form-control_login" required autofocus>
+    </div>
 
-            <h1 class="h3 mb-3 font-weight-normal">登入</h1>
-        </div>
+    <div class="form-label-group">
+        <label for="inputPassword">Password</label>
+        <input  type="password" id="inputPassword" class="form-control_login" placeholder="Password" required>
+    </div>
 
-        <div class="form-label-group">
-            <input type="text" id="inputaccount" class="form-control" placeholder="Email address" required autofocus>
-            <label for="inputaccount">Account</label>
-        </div>
-
-        <div class="form-label-group">
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-            <label for="inputPassword">Password</label>
-        </div>
-
-        <div class="checkbox mb-3">
-            <label>
-                <input type="checkbox" value="remember-me"> Remember me
-            </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="button" id="as">Sign in</button>
-    </form>
+    <div class="checkbox mb-3">
+        <label>
+            <input type="checkbox" value="remember-me"> Remember me
+        </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="button" id="as">Sign in</button>
+</form>
 
 </body>
 
 <script>
 
     $("#as").click(function () {
-        if ($("#inputaccount").val() == "" || $("#inputPassword").val() == "") {
+        if ($("#inputaccount").val() == "" || $("#inputPassword").val() == ""){
             alert("帳號密碼不可為空！！")
             return
         }
@@ -76,11 +46,11 @@
                 "password": $("#inputPassword").val()
             },
             success: function (result) {
-                if (result) {
-                    window.location.href = "test.html?" + result;
+                if (result){
+                    window.location.href="manage.html?"+result;
                 }
                 else {
-                    alert("登入失敗")
+                        alert("登入失敗")
                 }
             },
             error: function () {
@@ -93,3 +63,4 @@
 </script>
 
 </html>
+

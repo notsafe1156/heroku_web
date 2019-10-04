@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,8 +9,7 @@
     <title>Checkout example · Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -33,71 +31,67 @@
 
     <script src="jquery-3.4.1.js"></script>
 </head>
-
 <body class="bg-light">
-    <div class="container">
-        <div class="py-5 text-center">
-            <h2>Modify</h2>
-        </div>
+<div class="container">
+    <div class="py-5 text-center">
+        <h2>Modify</h2>
     </div>
-    <div class="col-md-8 order-md-1">
-        <div>
-            <button class="btn btn-primary btn-lg btn-block" type="submit"
-                onclick="location.href='test.html'">返回</button>
+</div>
+<div class="col-md-8 order-md-1">
+    <div>
+        <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="location.href='test.html'">返回</button>
+    </div>
+
+    <form class="needs-validation" novalidate>
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <label for="author">author</label>
+                <input type="text" class="form-control" id="author" readonly="readonly" required>
+                <label for="category">category</label>
+                <input type="text" class="form-control" id="category" readonly="readonly" required>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="Title">Title</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="title" readonly="readonly" required>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="time">Time</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="time" readonly="readonly" required>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="link">Link<span class="text-muted"></span></label>
+            <input type="email" class="form-control" id="link" readonly="readonly">
+        </div>
+        <div class="mb-3">
+            <label for="images">images</label>
+            <textarea  type="text" class="form-controli" id="images" readonly="readonly" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="text">text <span class="text-muted"></span></label>
+            <textarea  type="text" class="form-controlt" id="text" readonly="readonly"></textarea>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="tag">tag</label>
+            <input type="text" class="form-control" id="tag" required>
+        </div>
+        <div class="col-md-3 mb-3">
+            <input type="checkbox" id="display">display
         </div>
 
-        <form class="needs-validation" novalidate>
-            <div class="row">
-                <div class="col-md-3 mb-3">
-                    <label for="author">author</label>
-                    <input type="text" class="form-control" id="author" readonly="readonly" required>
-                    <label for="category">category</label>
-                    <input type="text" class="form-control" id="category" readonly="readonly" required>
-                </div>
-            </div>
-            <div class="mb-3">
-                <label for="Title">Title</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" id="title" readonly="readonly" required>
-                </div>
-            </div>
-            <div class="mb-3">
-                <label for="time">Time</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" id="time" readonly="readonly" required>
-                </div>
-            </div>
-            <div class="mb-3">
-                <label for="link">Link<span class="text-muted"></span></label>
-                <input type="email" class="form-control" id="link" readonly="readonly">
-            </div>
-            <div class="mb-3">
-                <label for="images">images</label>
-                <textarea type="text" class="form-controli" id="images" readonly="readonly" required></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="text">text <span class="text-muted"></span></label>
-                <textarea type="text" class="form-controlt" id="text" readonly="readonly"></textarea>
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="tag">tag</label>
-                <input type="text" class="form-control" id="tag" required>
-            </div>
-            <div class="col-md-3 mb-3">
-                <input type="checkbox" id="display" value="remember-me">display
-            </div>
-
-        </form>
-        <div>
-            <button class="btn btn-primary btn-lg btn-block" type="submit"
-                onclick="location.href='test.html'">確定</button>
+    </form>
+    <div>
+            <button class="btn btn-primary btn-lg btn-block" id="enter" type="submit" >確定</button>
         </div>
-    </div>
+</div>
 </body>
 
 <script>
-
-
+var id;
     $(function () {
         var url = window.location.search;
         var ID = url.substr(4);
@@ -108,7 +102,7 @@
             },
             url: 'https://djangotest1156.herokuapp.com/api/RSS/raw_sql_query',
             success: function (result) {
-                $("#id").val(result[0].id);
+                id = (result[0].id);
                 $("#title").val(result[0].title);
                 $("#time").val(result[0].time);
                 $("#link").val(result[0].link);
@@ -126,6 +120,28 @@
             }
         });
     });
-</script>
+$("#enter").click(function () {
+  $.ajax({
+      type: 'put',
+      data: {
+          'id':id,
+          'category':$("#category").val(),
+          'tag':$("#tag").val(),
+          'display':$("#display").val(),
+      },
+      url: 'https://djangotest1156.herokuapp.com/api/RSS/update_text/',
+      success:function (result) {
+          alert(result)
+          window.location.href="manage.html?";
+      },
+      error:function () {
+          alert("失敗")
+      }
+  })
 
+})
+
+
+</script>
 </html>
+

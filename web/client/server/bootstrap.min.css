@@ -1934,6 +1934,21 @@ pre code {
 .table-responsive > .table-bordered {
     border: 0
 }
+.form-control_login {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
 
 .form-control {
     display: block;
@@ -2134,7 +2149,7 @@ textarea.form-control {
 }
 
 .form-check-input {
-    position: absolute;
+    position: relative;
     margin-top: .3rem;
     margin-left: -1.25rem
 }
@@ -2172,7 +2187,7 @@ textarea.form-control {
 }
 
 .valid-tooltip {
-    position: absolute;
+    position: relative;
     top: 100%;
     z-index: 5;
     display: none;
@@ -2293,7 +2308,7 @@ textarea.form-control {
 }
 
 .invalid-tooltip {
-    position: absolute;
+    position: relative;
     top: 100%;
     z-index: 5;
     display: none;
@@ -3104,7 +3119,7 @@ a.btn.disabled, fieldset:disabled a.btn {
 
 .btn-block {
     display: block;
-    width: 10%
+    width: 100%
 }
 
 .btn-block + .btn-block {
@@ -3170,7 +3185,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 
 .dropdown-menu {
-    position: absolute;
+    position: relative;
     top: 100%;
     left: 0;
     z-index: 1000;
@@ -3503,7 +3518,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 
 .btn-group-toggle > .btn input[type=checkbox], .btn-group-toggle > .btn input[type=radio],
 .btn-group-toggle > .btn-group > .btn input[type=checkbox], .btn-group-toggle > .btn-group > .btn input[type=radio] {
-    position: absolute;
+    position: relative;
     clip: rect(0, 0, 0, 0);
     pointer-events: none
 }
@@ -3633,7 +3648,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 .input-group-lg > .input-group-append > .btn, .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn, .input-group-lg > .input-group-prepend > .input-group-text {
     padding: .5rem 1rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     border-radius: .3rem
 }
@@ -3685,7 +3700,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 
 .custom-control-input {
-    position: absolute;
+    position: relative;
     z-index: -1;
     opacity: 0
 }
@@ -3725,7 +3740,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 
 .custom-control-label::before {
-    position: absolute;
+    position: relative;
     top: .25rem;
     left: -1.5rem;
     display: block;
@@ -3738,7 +3753,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 
 .custom-control-label::after {
-    position: absolute;
+    position: relative;
     top: .25rem;
     left: -1.5rem;
     display: block;
