@@ -48,11 +48,11 @@
         if (hash != ""){
             localStorage.user= hash;
             hash_local = localStorage.user;
-            alert(hash_local)
+            // alert(hash_local)
         }
         else {
             hash_local = localStorage.user;
-            alert(hash_local)
+            // alert(hash_local)
         }
 
 
@@ -146,7 +146,7 @@
             },
             success: function (result) {
                 console.log(result);
-                alert(result);
+                // alert(result);
                 window.location.reload("first_version.html")
             },
             error: function (xhr) {

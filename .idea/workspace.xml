@@ -72,15 +72,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client\server" />
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\server" />
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client" />
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\server" />
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -146,6 +147,7 @@
       <workItem from="1570102913350" duration="4812000" />
       <workItem from="1570110453846" duration="2846000" />
       <workItem from="1570160533173" duration="954000" />
+      <workItem from="1570188392934" duration="369000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1569571140981</created>
@@ -455,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570160880571</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="update">
+      <created>1570188549406</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1570188549406</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
