@@ -5,7 +5,7 @@ $(document).ready(function ()
   key = url.searchParams.get('key');
 
   $.ajax({                                    
-    url: 'https://database0926.herokuapp.com/api/test1/raw_sql_query/', 
+    url: 'https://djangotest1156.herokuapp.com/api/test1/raw_sql_query/',
     type: "GET",                                   
     dataType: 'json',               
     success: function(Data)          
