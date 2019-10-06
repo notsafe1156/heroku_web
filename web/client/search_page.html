@@ -34,6 +34,20 @@
 					<div class="container">
 						<div class="main-menu clear-fix">
 
+							<div class="search-button-content float-right">
+
+								<button class="search b-p-bg-color" id="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+								<div class="search-box tran5s" id="searchWrapper">
+									<button id="close-button" class="p-color"><i class="fa fa-times" aria-hidden="true"></i></button>
+									<div class="container">
+
+										<form name='form' id='form' onsubmit="return false">
+											<input type="text" placeholder="Search...." name='name' id='name' />
+										 <input type='submit' name='submit' value='送出' onclick='processFormData();' />
+										</form>
+									</div>
+								</div> <!-- /.search-box -->
+							</div> <!-- /.right-content -->
 							
 							<!-- Menu -->
 							<nav class="navbar">

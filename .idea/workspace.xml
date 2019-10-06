@@ -4,8 +4,8 @@
     <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/client/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/client/server/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/client/server/manage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/manage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/js/search_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/js/search_page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/search_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/search_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/client/server/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/manage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,7 +65,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/client/server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/client" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -78,17 +78,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client" />
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client\server" />
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\server" />
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client" />
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client\server" />
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client" />
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\server" />
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -159,7 +159,7 @@
       <workItem from="1570354409975" duration="43000" />
       <workItem from="1570354468086" duration="76000" />
       <workItem from="1570355263842" duration="4652000" />
-      <workItem from="1570361364186" duration="3578000" />
+      <workItem from="1570361364186" duration="6214000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1569571140981</created>
@@ -497,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570356021204</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="update">
+      <created>1570365174417</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1570365174417</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

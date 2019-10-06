@@ -65,3 +65,13 @@ $(document).ready(function ()
   });
 
 });
+//search
+function processFormData() {
+  const nameElement = document.getElementById("name");
+  const name = nameElement.value;
+  if(name!=""){
+  window.location.href='search_page.html?key='+name;
+  }else{
+    alert("請輸入想查詢的關鍵字!");
+  }
+}
