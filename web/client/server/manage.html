@@ -103,8 +103,8 @@
         <table>
             <tr>
                 <p align="center">
-                    <input type="button" onclick="before_clear_table()" id="leftButton" value="before"></input>
-                    <input type="button" onclick="next_clear_table()" id="rightButton" value="next"></input>
+                    <input type="button" onclick="before_clear_table()" id="leftButton" value="before" ></input>
+                    <input type="button" onclick="next_clear_table()" id="rightButton" value="next" ></input>
                 </p>
             </tr>
         </table>
@@ -118,10 +118,15 @@
 
 <script>
     var table_color_swich = 1;
-    var page = 1;
+    var page = parseInt(localStorage.getItem("record_page"));
+    if (page == null) {
+        page = 1;
+    }
+    var source_data = localStorage.getItem("record_source");
+    if (source_data == null) {
+        source_data = "";
+    }
     var all_page;
-    var source_data;
-    source_data = "";
     var final_hash;
     var user_name;
     var local_hash;
@@ -155,7 +160,7 @@
     }
     $(function () {/*API操作和顯示區*/<!--- 初始 -->
         var source_text;
-        source_text = "";
+        source_text = source_data;
         $.ajax({
             type: 'get',
             url: "https://djangotest1156.herokuapp.com/api/RSS/get_source/",
@@ -163,15 +168,18 @@
                 append_dropdown(result);
             }
         });
+        console.log(page, source_text);
         $.ajax({
             type: 'post',
-            url: "https://djangotest1156.herokuapp.com/api/RSS/get_info_for_page/" + "?page=1",
+            url: "https://djangotest1156.herokuapp.com/api/RSS/get_info_for_page/" + "?page=" + page + "&source=" + source_text,
             data: {
                 "login_hash": final_hash,
                 "account": user_name,
             },
             success: function (result) {
                 all_page = Math.ceil(result[1] / 20);
+                alert(page);
+                alert(all_page);
                 $.each(result[0], function (index, element) {
                     append_table(element);
                 });
@@ -270,7 +278,9 @@
             success: function (result) {
                 $.each(result[0], function (index, element) {
                     append_table(element);
+
                 });
+                $('html,body').animate({ scrollTop: 0 }, 0);
             },
             error: function () {
                 alert("錯誤")
@@ -280,7 +290,7 @@
 
     function next_clear_table() {
         if (page <= all_page - 0.5) {
-            var ntpage;
+            var ntpage = 0;
             ntpage = page + 1;
             page = ntpage;
             $("#tab tr:not(:first)").html("");
@@ -345,6 +355,8 @@
         let EdId = e.nextSibling;
         var EID = EdId.innerHTML;
         console.log(EID);
+        localStorage.setItem("record_page", page);
+        localStorage.setItem("record_source", source_data);
         window.location.href = "modify.html" + "?" + "id=" + EID;
     }
 
