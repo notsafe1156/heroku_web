@@ -156,6 +156,12 @@
             });
         });
 
+        function enter_search_text() {
+            if (event.keyCode == 13) {
+                search_text();
+            }
+        }
+
         function change_source() {/*API操作和顯示區*/<!--- 初始 -->
             var source_text;
             source_text = source_data;

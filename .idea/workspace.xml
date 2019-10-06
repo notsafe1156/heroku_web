@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,14 +153,7 @@
       <workItem from="1570354409975" duration="43000" />
       <workItem from="1570354468086" duration="76000" />
       <workItem from="1570355263842" duration="4652000" />
-      <workItem from="1570361364186" duration="6989000" />
-    </task>
-    <task id="LOCAL-00002" summary="init">
-      <created>1569573753946</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1569573753946</updated>
+      <workItem from="1570361364186" duration="7230000" />
     </task>
     <task id="LOCAL-00003" summary="init">
       <created>1569574340148</created>
@@ -500,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570368027688</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="fix option value">
+      <created>1570368676302</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1570368676302</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +534,8 @@
     <MESSAGE value="change name" />
     <MESSAGE value="update server" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="fix option value" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix option value" />
   </component>
   <component name="WindowStateProjectService">
     <state x="567" y="347" key="FileChooserDialogImpl" />
