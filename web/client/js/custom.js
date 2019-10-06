@@ -117,10 +117,10 @@ function BannerSlider () {
 }
 
 
-// isoptop Project Gallery
+// isoptop Project 
 function masanory () {
-  if ($("#isotop-gallery-wrapper").length) {
-    var $grid = $('#isotop-gallery-wrapper').isotope({
+  if ($("#isotop--wrapper").length) {
+    var $grid = $('#isotop--wrapper').isotope({
       // options
       itemSelector: '.isotop-item',
       percentPosition: true,

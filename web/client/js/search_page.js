@@ -5,7 +5,7 @@ $(document).ready(function ()
   key = url.searchParams.get('key');
 
   $.ajax({                                    
-    url: 'https://djangotest1156.herokuapp.com/api/RSS/raw_sql_query/',
+    url: 'https://djangotest1156.herokuapp.com/api/RSS/get_text/', 
     type: "GET",                                   
     dataType: 'json',               
     success: function(Data)          
@@ -39,17 +39,17 @@ $(document).ready(function ()
           img =img.replace('}', '');
           img=img.split(',');
         
-            item = ''+'<div class="col-md-4 col-xs-6 our-pet-services-item-width">'+
-            '<div class="our-pet-services-item">'+
-              '<div class="our-pet-services-img">'+
-                '<img src="'+img[0]+'" alt="image" height="300">'+
-              '</div>'+
-              '<div class="our-pet-services-text">'+
-                '<h5><a href="service-details.html?id='+id+'&name=">'+title.substring(0,25)+'...</a></h5>'+
-                '<p>'+text.substring(0,40)+'....</p>'+
-              '</div>'+
+          item = ''+'<div class="col-md-4 col-xs-6 our--item-width">'+
+          '<div class="our--item">'+
+            '<div class="our--img">'+
+              '<img src="'+img[0]+'" alt="image" height="300">'+
             '</div>'+
-            '</div>';
+            '<div class="our--text">'+
+              '<h5><a href="service-details.html?id='+id+'&name=">'+title.substring(0,25)+'...</a></h5>'+
+              '<p>'+text.substring(0,40)+'....</p>'+
+            '</div>'+
+          '</div>'+
+          '</div>';
             
 
             $('#post').append(item); 

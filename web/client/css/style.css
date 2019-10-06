@@ -31,7 +31,7 @@
 /*   17 - Theme Main container/Theme Side bar  */
 /*   18 - HOME-TWO--BANNER  */
 /*   19 - ABOUT US  */
-/*   20 - OUR-SERVICES */
+/*   20 - OUR- */
 /*   21 - Portfolio  */
 /*   22 - Our - Team  */
 /*   23 - BLOG  */
@@ -194,9 +194,9 @@ input,textarea {outline: none; -webkit-box-shadow: none; box-shadow: none;-webki
 	float: right;
 }
 .Blog-side-bar-list .blog-categories>ul>li>a>span, .blog-details-tag-item>ul>li>a>span,
-.gallery-tiem-wrapper .gallery-item-opact, .Blog-list-item-wrapper .list-item .item-text h3,
-.our-pet-health-section .our-work-process>div.row>div>div, .client-slider .opacity .item .text:before, .client-slider .opacity .item .text p,
-.our-pet-services .our-pet-services-item .our-pet-services-text, .inspiration-tab .panel-heading h6 a:before,
+.-wrapper .-item-opact, .Blog-list-item-wrapper .list-item .item-text h3,
+.our-section .our-work-process>div.row>div>div, .client-slider .opacity .item .text:before, .client-slider .opacity .item .text p,
+.our- .our--item .our--text, .inspiration-tab .panel-heading h6 a:before,
 .banner-bottom-item>.banner-bottom-contante>i, .banner-bottom-item>.banner-bottom-contante>p,.them-inner-banner .inner-banner-opact .inner-banner-title a,
 .main-menu .navbar-nav >li, #theme-main-banner .camera_prev > span:before, #theme-main-banner .camera_next > span:before,
 .tran3s {
@@ -224,6 +224,64 @@ img, .banner-bottom-item:before, .client-slider .opacity .item .text:after, .cli
 .text-center {
 	text-align: center;
 }
+
+
+/*** 
+
+====================================================================
+  page button
+====================================================================
+
+ ***/
+
+ .page-icon{
+	margin:20px 0 0 0;/*設定距離頂部20畫素*/
+	font-size:0;/*修復行內元素之間空隙間隔*/
+	text-align:center;/*設定內容居中顯示*/
+}
+
+/*設定共有的的樣式佈局，主要是進行程式碼優化，提高執行效率*/
+.page-icon a,.page-disabled,.page-next{
+	border:1px solid #ccc;
+	border-radius:3px;
+	padding:4px 10px 5px;
+	font-size:14PX;/*修復行內元素之間空隙間隔*/
+	margin-right:10px;
+}
+
+/*對 a 標籤進行樣式佈局 */
+.page-icon a{
+	text-decoration:none;/*取消連結的下劃線*/
+	color:#005aa0;
+}
+
+.page-current{
+	color:#ff6600;
+	padding:4px 10px 5px;
+	font-size:14PX;/*修復行內元素之間空隙間隔*/
+}
+
+.page-disabled{
+	color:#ccc;
+}
+
+.page-next i,.page-disabled i{
+	cursor:pointer;/*設定滑鼠經過時的顯示狀態，這裡設定的是顯示狀態為小手狀態*/
+	display:inline-block;/*設定顯示的方式為行內塊元素*/
+	width:5px;
+	height:9px;
+}
+.page-disabled i{
+	background-position:-80px -608px;
+	margin-right:3px;
+}
+
+.page-next i{
+	background-position:-62px -608px;
+	margin-left:3px;
+}
+
+
 /*** 
 
 ====================================================================
@@ -577,27 +635,27 @@ img, .banner-bottom-item:before, .client-slider .opacity .item .text:after, .cli
 	color: #121212;
 }
 .banner-bottom-item>.banner-bottom-contante>p {color: #797979; margin-top: 5px;}
-/*============================= We are myPet =========================*/
-.we-are-my-pet-section {margin-bottom: 110px;}
-.we-are-my-pet-section .we-are-my-pet-text>span {
+/*============================= We are my =========================*/
+.we-are-my-section {margin-bottom: 110px;}
+.we-are-my-section .we-are-my-text>span {
 	display: block; 
 	width: 74px; 
 	border-top: solid 3px #e53031;
 }
-.we-are-my-pet-section .we-are-my-pet-text>h2 {margin: 15px 0 30px; text-transform: none;}
-.we-are-my-pet-section .we-are-my-pet-text>h2>span {
+.we-are-my-section .we-are-my-text>h2 {margin: 15px 0 30px; text-transform: none;}
+.we-are-my-section .we-are-my-text>h2>span {
 	font-family: 'Pacifico', cursive;
 	font-weight: 400;
 	color: #5f5e5e;
 }
-.we-are-my-pet-section .we-are-my-pet-text>h2>span>span {color: #e53031;}
-.we-are-my-pet-section .we-are-my-pet-text>p {
+.we-are-my-section .we-are-my-text>h2>span>span {color: #e53031;}
+.we-are-my-section .we-are-my-text>p {
 	font-size: 18px; 
 	margin-bottom: 25px; 
 	line-height: 35px;
 	color: #5f5e5e;
 }
-.we-are-my-pet-section .we-are-my-pet-text>a {
+.we-are-my-section .we-are-my-text>a {
 	display: block;
 	width: 196px;
 	line-height: 50px;
@@ -608,13 +666,13 @@ img, .banner-bottom-item:before, .client-slider .opacity .item .text:after, .cli
 	border-radius: 25px;
 	margin-top: 45px;
 }
-.we-are-my-pet-section .we-are-my-pet-img {overflow: hidden; position: relative;}
-.we-are-my-pet-section .we-are-my-pet-img>img {width: 100%;}
-.we-are-my-pet-section:hover .we-are-my-pet-img>img {
+.we-are-my-section .we-are-my-img {overflow: hidden; position: relative;}
+.we-are-my-section .we-are-my-img>img {width: 100%;}
+.we-are-my-section:hover .we-are-my-img>img {
 	-webkit-transform: scale3D(1.1,1.1,1);
     transform: scale3D(1.1,1.1,1);
 }
-.we-are-my-pet-section .we-are-my-pet-img>div {
+.we-are-my-section .we-are-my-img>div {
 	position: absolute; 
 	top: 10px; 
 	right: 10px; 
@@ -626,29 +684,29 @@ img, .banner-bottom-item:before, .client-slider .opacity .item .text:after, .cli
 .them-title>span {display: inline-block; width: 74px; border-top: solid 3px #e53031;}
 .them-title>h2 {margin-top: 15px;}
 .them-title>p {font-size: 18px; max-width: 700px; margin: 7px auto 0; color: #737373;}
-/*============================= Our Pet Services =========================*/
-.our-pet-services {margin-top: 74px;}
-.our-pet-services .our-pet-services-item {overflow: hidden; margin-bottom: 65px;}
-.our-pet-services .our-pet-services-item .our-pet-services-img {overflow: hidden;}
-.our-pet-services .our-pet-services-item .our-pet-services-img>img {width: 100%;}
-.our-pet-services .our-pet-services-item:hover .our-pet-services-img>img {
+/*============================= Our   =========================*/
+.our- {margin-top: 74px;}
+.our- .our--item {overflow: hidden; margin-bottom: 65px;}
+.our- .our--item .our--img {overflow: hidden;}
+.our- .our--item .our--img>img {width: 100%;}
+.our- .our--item:hover .our--img>img {
 	-webkit-transform: scale3D(1.1,1.1,1);
     transform: scale3D(1.1,1.1,1);
 }
-.our-pet-services .our-pet-services-item .our-pet-services-text {
+.our- .our--item .our--text {
 	padding: 42px 0 15px; 
 	border-bottom: solid 1px #dcdcdc; 
 	text-align: center;
 	min-height: 210px;
 }
-.our-pet-services .our-pet-services-item:hover .our-pet-services-text {border-color: #e53031;}
-.our-pet-services .our-pet-services-item .our-pet-services-text>h5>a {
+.our- .our--item:hover .our--text {border-color: #e53031;}
+.our- .our--item .our--text>h5>a {
 	text-transform: uppercase; 
 	color: #121212; 
 	font-weight: 600;
 }
-.our-pet-services .our-pet-services-item:hover .our-pet-services-text>h5>a {color: #e53031;}
-.our-pet-services .our-pet-services-item .our-pet-services-text>p {margin-top: 30px; color: #737373;}
+.our- .our--item:hover .our--text>h5>a {color: #e53031;}
+.our- .our--item .our--text>p {margin-top: 30px; color: #737373;}
 /*============================= Company History =========================*/
 .company-history-section {
 	position: relative;
@@ -691,34 +749,34 @@ img, .banner-bottom-item:before, .client-slider .opacity .item .text:after, .cli
 }
 .company-history-containt-opact .history-item.item-four {float: right;}
 .company-history-containt-opact .col-item-three {padding: 0;}
-/*============================= Our pet health =========================*/
-.our-pet-health-section {}
-.our-pet-health-section .our-work-process>h4 {line-height: 35px;}
-.our-pet-health-section .our-work-process>p {
+/*============================= Our  health =========================*/
+.our-section {}
+.our-section .our-work-process>h4 {line-height: 35px;}
+.our-section .our-work-process>p {
 	color: rgba(0,0,0,0.70); 
 	margin: 30px 0 70px; 
 	line-height: 35px;
 }
-.our-pet-health-section .our-work-process>div.row>div>div {
+.our-section .our-work-process>div.row>div>div {
 	border: solid 1px #e8e3e3; 
 	text-align: center; 
 	height: 208px;
 }
-.our-pet-health-section .our-work-process>div.row>div>div:hover {border-color: #e53031;}
-.our-pet-health-section .our-work-process>div.row>div>div>i {
+.our-section .our-work-process>div.row>div>div:hover {border-color: #e53031;}
+.our-section .our-work-process>div.row>div>div>i {
 	color: #e53031; 
 	font-size: 95px; 
 	line-height: 150px;
 }
-.our-pet-health-section .our-work-process>div.row>div>div>h6 {
+.our-section .our-work-process>div.row>div>div>h6 {
 	font-size: 18px; 
 	font-weight: 600; 
 	text-transform: uppercase;
 }
-.our-pet-health-section .our-work-process>div.row>div>div>h6>a {color: #121212}
-.our-pet-health-section .our-work-process>div.row>div>div:hover>h6>a {color: #e53031;}
-.our-pet-health-section .doing-the-right-thing>h5 {font-size: 28px; line-height: 35px;}
-.our-pet-health-section .doing-the-right-thing>p {color: rgba(0,0,0,0.70); margin: 24px 0 43px;}
+.our-section .our-work-process>div.row>div>div>h6>a {color: #121212}
+.our-section .our-work-process>div.row>div>div:hover>h6>a {color: #e53031;}
+.our-section .doing-the-right-thing>h5 {font-size: 28px; line-height: 35px;}
+.our-section .doing-the-right-thing>p {color: rgba(0,0,0,0.70); margin: 24px 0 43px;}
 .inspiration-tab .panel-heading {padding: 0;}
 .inspiration-tab .panel-heading h6 a {
 	display: block;
@@ -986,7 +1044,7 @@ footer .bottom-footer form button {
 }
 .banner-bottom-version-two .banner-bottom-item {background: #f7f7f7;}
 /*======*/
-.we-are-my-pet-section .we-are-my-pet-text-v-two>span {
+.we-are-my-section .we-are-my-text-v-two>span {
 	display: block;
 	width: 100%;
 	border-top: none;
@@ -994,14 +1052,14 @@ footer .bottom-footer form button {
 	font-size: 20px;
 	font-family: 'Pacifico', cursive;
 }
-.we-are-my-pet-section .we-are-my-pet-text-v-two>p {margin-bottom: 60px;}
-.we-are-my-pet-section .we-are-my-pet-text-v-two>h5 {
+.we-are-my-section .we-are-my-text-v-two>p {margin-bottom: 60px;}
+.we-are-my-section .we-are-my-text-v-two>h5 {
 	display: inline-block; 
 	font-size: 26px; 
 	font-weight: 500;
 	margin-right: 30px;
 }
-.we-are-my-pet-section .we-are-my-pet-text-v-two>img {display: inline-block;}
+.we-are-my-section .we-are-my-text-v-two>img {display: inline-block;}
 /*========*/
 .company-history-v-two {
 	background: url(../images/home/bg-img-1.jpg) no-repeat center;
@@ -1097,30 +1155,30 @@ footer .bottom-footer form button {
 /*================================ About Us ==============================*/
 .about-us-client-slider {margin-bottom: 0 !important;}
 /*====*/
-.about-us-we-are-my-pet {margin-top: 55px;}
-.about-us-we-are-my-pet>h4 {
+.about-us-we-are-my {margin-top: 55px;}
+.about-us-we-are-my>h4 {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 35px;
 	font-weight: 600;
 	margin-bottom: 35px;
 }
-.about-us-we-are-my-pet .about-us-dog-years>span,
-.about-us-we-are-my-pet p {
+.about-us-we-are-my .about-us-dog-years>span,
+.about-us-we-are-my p {
 	font-size: 18px; 
 	line-height: 35px;
 	color: rgba(0,0,0,0.70);
 }
-.about-us-we-are-my-pet .about-us-dog-years>span {
+.about-us-we-are-my .about-us-dog-years>span {
 	display: block;
 	margin: 30px 0 35px 0;
 }
-.about-us-we-are-my-pet .about-us-dog-years>div {overflow: hidden;}
-.about-us-we-are-my-pet .about-us-dog-years>div>img {max-width: 100%;}
-.about-us-we-are-my-pet .about-us-tex>p {margin-bottom: 28px;}
-.about-us-we-are-my-pet .about-us-tex>p:last-child {margin-bottom: 0;}
-.about-us-we-are-mypet-video {overflow: hidden; position: relative; margin-top: 95px;}
-.about-us-we-are-mypet-video>img {width: 100%;}
-.about-us-we-are-mypet-video>div {
+.about-us-we-are-my .about-us-dog-years>div {overflow: hidden;}
+.about-us-we-are-my .about-us-dog-years>div>img {max-width: 100%;}
+.about-us-we-are-my .about-us-tex>p {margin-bottom: 28px;}
+.about-us-we-are-my .about-us-tex>p:last-child {margin-bottom: 0;}
+.about-us-we-are-my-video {overflow: hidden; position: relative; margin-top: 95px;}
+.about-us-we-are-my-video>img {width: 100%;}
+.about-us-we-are-my-video>div {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -1130,37 +1188,37 @@ footer .bottom-footer form button {
 	text-align: center;
 	padding-top: 25%;
 }
-.about-us-we-are-mypet-video>div>a {
+.about-us-we-are-my-video>div>a {
 	font-size: 70px;
 	color: #fff;
 	-webkit-transform: translateY(-50%);
     		transform: translateY(-50%);
 }
-/*================================= Services V-1 ====================================*/
-.pet-services-v-one {margin-top: 60px;}
-/*================================= Services details ====================================*/
-.services-details {margin-top: 120px;}
-.services-details-title {margin-bottom: 65px;}
-.services-details-title>h3 {
+/*=================================  V-1 ====================================*/
+.--v-one {margin-top: 60px;}
+/*=================================  details ====================================*/
+.-details {margin-top: 120px;}
+.-details-title {margin-bottom: 65px;}
+.-details-title>h3 {
 	font-size: 32px;
 	text-transform: uppercase;
 	margin-bottom: 30px;
 }
-.services-details-title>h3>span {
+.-details-title>h3>span {
 	display: inline-block;
 	border-top: solid 1px #cdcdcd;
 	width: 370px;
 	vertical-align: middle;
 	margin-left: 95px;
 }
-.services-details-title>p {color: rgba(0,0,0,0.7); max-width: 720px;}
-.services-details .your-pets-receive-care .pets-image {
+.-details-title>p {color: rgba(0,0,0,0.7); max-width: 720px;}
+.-details .yours-receive-care .s-image {
 	overflow: hidden; 
 	position: relative;
 	margin-bottom: 65px;
 }
-.services-details .your-pets-receive-care .pets-image>img {width: 100%;}
-.services-details .your-pets-receive-care .pets-image>div {
+.-details .yours-receive-care .s-image>img {width: 100%;}
+.-details .yours-receive-care .s-image>div {
 	position: absolute;
 	top: 10px;
 	right: 10px;
@@ -1168,11 +1226,11 @@ footer .bottom-footer form button {
 	left: 10px;
 	border: solid 1px #fff;
 }
-.services-details .your-pets-receive-care:hover .pets-image>img {
+.-details .yours-receive-care:hover .s-image>img {
 	-webkit-transform:scale3D(1.1,1.1,1);
 	      transform:scale3D(1.1,1.1,1);
 }
-.services-details .your-pets-receive-care ul>li {
+.-details .yours-receive-care ul>li {
 	line-height: 26px;
 	color: rgba(0,0,0,0.7);
 	padding-left: 35px;
@@ -1180,19 +1238,19 @@ footer .bottom-footer form button {
 	vertical-align: middle;
 	margin-bottom: 12px;
 }
-.services-details .your-pets-receive-care ul>li>i {
+.-details .yours-receive-care ul>li>i {
 	position: absolute;
 	top: 0;
 	left: 0;
 	line-height: 26px;
 	color: #e53031;
 }
-.services-details .services-packages>h4 {font-size: 32px;}
-.services-details .services-packages>p {
+.-details .-packages>h4 {font-size: 32px;}
+.-details .-packages>p {
 	color: rgba(0,0,0,0.7);
 	margin: 25px 0 35px;
 }
-.services-details .services-packages ul>li {
+.-details .-packages ul>li {
 	font-size: 20px;
 	font-weight: 500;
 	color: rgba(0,0,0,0.7);
@@ -1202,14 +1260,14 @@ footer .bottom-footer form button {
 	line-height: 36px;
 	margin-bottom: 13px;
 }
-.services-details .services-packages ul>li>i {
+.-details .-packages ul>li>i {
 	position: absolute;
 	top: 0;
 	left: 0;
 	line-height: 36px;
 	color: #e53031;
 }
-.services-details .services-packages>a {
+.-details .-packages>a {
 	width: 255px;
 	line-height: 60px;
 	text-align: center;
@@ -1220,14 +1278,14 @@ footer .bottom-footer form button {
 	font-family: 'Yrsa', serif;
 	margin-top: 40px;
 }
-.services-details-help {
+.-details-help {
 	padding: 95px 95px 75px;
 	background: #e53031;
 	margin: 70px 0 40px;
 	position: relative;
 	overflow: hidden !important;
 }
-.services-details-help:before {
+.-details-help:before {
     content: '';
     width: 200%;
     height: 100px;
@@ -1238,22 +1296,22 @@ footer .bottom-footer form button {
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
 }
-.services-details-help h3 {color: #fff; line-height: 48px;}
-.services-details-help p {
+.-details-help h3 {color: #fff; line-height: 48px;}
+.-details-help p {
 	color: #000;
 	margin-top: 15px;
 	font-size: 18px;
 	font-weight: 600;
 }
-/*================================ Gallery =================================*/
-.gallery-v-one {margin-top: 130px;}
-.gallery-tiem-wrapper {
+/*================================  =================================*/
+.-v-one {margin-top: 130px;}
+.-wrapper {
 	overflow: hidden !important; 
 	position: relative; 
 	margin-bottom: 30px;
 }
-.gallery-tiem-wrapper>img {width: 100%;}
-.gallery-tiem-wrapper .gallery-item-opact {
+.-wrapper>img {width: 100%;}
+.-wrapper .-item-opact {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -1264,7 +1322,7 @@ footer .bottom-footer form button {
 	transform:scale(0);
 	-webkit-transform:scale(0);
 }
-.gallery-tiem-wrapper .gallery-item-opact>h5 {
+.-wrapper .-item-opact>h5 {
 	font-weight: 600;
 	color: #fff;
 	text-transform: uppercase;
@@ -1277,8 +1335,8 @@ footer .bottom-footer form button {
 	right: 0;
 	z-index: 99;
 }
-.gallery-tiem-wrapper:hover .gallery-item-opact>h5 {top: 50% !important;}
-.gallery-tiem-wrapper .gallery-item-opact>div {
+.-wrapper:hover .-item-opact>h5 {top: 50% !important;}
+.-wrapper .-item-opact>div {
 	position: absolute;
 	bottom: 15px;
 	left: 0;
@@ -1286,7 +1344,7 @@ footer .bottom-footer form button {
 	text-align: center;
 	z-index: 999;
 }
-.gallery-tiem-wrapper .gallery-item-opact>div>a {
+.-wrapper .-item-opact>div>a {
 	width: 60px;
 	line-height: 60px;
 	background: #e53031;
@@ -1296,23 +1354,23 @@ footer .bottom-footer form button {
 	font-weight: 600;
 	margin: 0 -30px;
 }
-.gallery-tiem-wrapper:hover .gallery-item-opact>div>a {margin: 0 8px !important;}
-.gallery-tiem-wrapper:hover .gallery-item-opact {
+.-wrapper:hover .-item-opact>div>a {margin: 0 8px !important;}
+.-wrapper:hover .-item-opact {
 	opacity: 1;
 	transform:scale(1);
 	-webkit-transform:scale(1);
 }
-.gallery-tiem-wrapper .gallery-item-opact>h5,
-.gallery-tiem-wrapper .gallery-item-opact>div>a {
+.-wrapper .-item-opact>h5,
+.-wrapper .-item-opact>div>a {
  	-webkit-transition: all .7s ease-out;
 	   -moz-transition: all .7s ease-out;
 	    -ms-transition: all .7s ease-out;
 	     -o-transition: all .7s ease-out;
 	        transition: all .7s ease-out;
  }
-.gallery-button-wrapper {text-align: center; margin-top: 50px;}
-.gallery-button-wrapper>li {display: inline-block; margin: 0 5px;}
-.gallery-button-wrapper>li>a {
+.-button-wrapper {text-align: center; margin-top: 50px;}
+.-button-wrapper>li {display: inline-block; margin: 0 5px;}
+.-button-wrapper>li>a {
 	width: 50px;
 	line-height: 50px;
 	background: #e1e0e0;
@@ -1321,9 +1379,9 @@ footer .bottom-footer form button {
 	font-size: 25px;
 	font-weight: 600;
 }
-.gallery-button-wrapper>li>a:hover {background: #e53031; color: #fff;}
-/*============================= Gallery V-2 =========================*/
-.gallery-v-two {margin-top: 110px;}
+.-button-wrapper>li>a:hover {background: #e53031; color: #fff;}
+/*=============================  V-2 =========================*/
+.-v-two {margin-top: 110px;}
 .isotop_menu {margin-bottom: 55px;}
 .isotop_menu ul li {
 	font-size: 20px;
@@ -1339,28 +1397,28 @@ footer .bottom-footer form button {
 }
 .isotop_menu ul li.is-checked,
 .isotop_menu ul li:hover {background: #e53031; color: #fff;}
-.gallery-v-two-wrapper .gallery_item_wrapper>.grid-sizer,
-.gallery-v-two-wrapper .gallery_item_wrapper>.isotop-item {
+.-v-two-wrapper ._item_wrapper>.grid-sizer,
+.-v-two-wrapper ._item_wrapper>.isotop-item {
 	width: 50%;
 	padding: 0 15px;
 }
-.gallery-v-two-wrapper .isotop-item>div.gallery-tiem-wrapper .gallery-item-opact {background: rgba(0,0,0,0.7);}
-/*============================= Gallery V-3 =========================*/
-.gallery-v-three-wrapper .gallery_item_wrapper>.grid-sizer,
-.gallery-v-three-wrapper .gallery_item_wrapper>.isotop-item {
+.-v-two-wrapper .isotop-item>div.-wrapper .-item-opact {background: rgba(0,0,0,0.7);}
+/*=============================  V-3 =========================*/
+.-v-three-wrapper ._item_wrapper>.grid-sizer,
+.-v-three-wrapper ._item_wrapper>.isotop-item {
 	width: 33.333333%;
 	padding: 0 15px;
 }
-.gallery-v-three-wrapper .isotop-item>div.gallery-tiem-wrapper .gallery-item-opact,
-.gallery-v-three-wrapper .isotop-item>div.gallery-tiem-wrapper {
+.-v-three-wrapper .isotop-item>div.-wrapper .-item-opact,
+.-v-three-wrapper .isotop-item>div.-wrapper {
 	border-radius: 50%;
 }
-.gallery-v-three-wrapper .isotop-item>div.gallery-tiem-wrapper .gallery-item-opact>div {
+.-v-three-wrapper .isotop-item>div.-wrapper .-item-opact>div {
 	bottom: 0 !important;
 	top: 0;
 	padding-top: 50%;
 }
-.gallery-v-three-wrapper .isotop-item>div.gallery-tiem-wrapper .gallery-item-opact>div>a {
+.-v-three-wrapper .isotop-item>div.-wrapper .-item-opact>div>a {
 	-webkit-transform: translateY(-50%);
     		transform: translateY(-50%);
 }

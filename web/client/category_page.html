@@ -53,36 +53,9 @@
 										<ul class="nav navbar-nav">
 
 										<li><a href="index.html">回到首頁</a>
-										<li class="dropdown-holder"><a href="#">eat</a>
-											<ul class="sub-menu">
-												<li><a href="" class="tran3s"> one</a></li>
-												<li><a href="" class="tran3s">Two</a></li>
-												<li><a href="" class="tran3s">Three</a></li>
-											</ul>
-										</li>
-
-										<li class="dropdown-holder"><a href="#">traffic</a>
-											<ul class="sub-menu">
-												<li><a href="" class="tran3s">zero</a></li>
-												<li><a href="" class="tran3s">one</a></li>
-												<li><a href="" class="tran3s">two</a></li>
-												<li><a href="" class="tran3s">three</a></li>
-												<li><a href="" class="tran3s">four</a></li>
-											</ul>
-										</li>
-
-										<li class="dropdown-holder"><a href="#">advice</a>
-											<ul class="sub-menu">
-												<li><a href="" class="tran3s">one</a></li>
-												<li><a href="" class="tran3s">two</a></li>
-											</ul>
-										</li>
-
-										<li class="dropdown-holder"><a href="#">hotel</a>
-											<ul class="sub-menu">
-												<li><a href="" class="tran3s"> one</a></li>
-												<li><a href="" class="tran3s"> Two</a></li>
-												<li><a href="" class="tran3s">three</a></li>
+										<li class="dropdown-holder"><a href="#">category</a>
+											<ul class="sub-menu" id = "category">
+												
 											</ul>
 										</li>
 
@@ -110,15 +83,19 @@
 				<div class="container">
 					<div class="them-title text-center">
 						<span></span>
-						<h2>搜尋結果</h2>
+						<div id = 'title'></div>
 						<p>People travel is not to get somewhere， but for tourism.</p>
 					</div>
 
-					<div class="row our-" id = 'post'>
+					<div class="row our-" id = 'cate'>
 						
 						
 						
 					</div>
+					<div class="page-icon">
+						<span class="page-current" id = "page"></span>
+					</div>
+
 				</div>
 			</section>
 
@@ -138,10 +115,8 @@
 
 
 		<!-- js file -->
-		<!--share CSS-->
-		<link rel="stylesheet" href="css/share-icon.css">
 		<!-- update -->
-		<script src="js/search_page.js"></script>
+		<script src="js/category.js"></script>
 		<!-- Main js file/jquery -->
 		<script src="vendor/jquery-2.2.3.min.js"></script>
 		<!-- bootstrap-select.min.js -->

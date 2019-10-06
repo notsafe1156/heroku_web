@@ -195,7 +195,7 @@ $(function() {
     // Add a Snazzy Info Window to the marker
     var info = new SnazzyInfoWindow({
         marker: marker,
-        content: '<h5>My Pet House </h5>' +
+        content: '<h5>My  House </h5>' +
                  '<p>San Francisco, CA 560 Bush St &amp; 20th Ave, Apt <br>5 San Francisco, 230909</p>',
         closeOnMapClick: false
     });

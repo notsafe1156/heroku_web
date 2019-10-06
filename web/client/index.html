@@ -43,7 +43,7 @@
 
 					   					<form name='form' id='form' onsubmit="return false">
 					   						<input type="text" placeholder="Search...." name='name' id='name' />
-											<input type='button' name='submit' value='送出' onclick='processFormData();' />
+											<input type='submit' name='submit' value='送出' onclick='processFormData();' />
 					   					</form>
 					   				</div>
 					   			</div> <!-- /.search-box -->
@@ -68,23 +68,10 @@
 
 
 										<li class="dropdown-holder"><a href="#">category</a>
-											<ul class="sub-menu">
-												<li><a href="" class="tran3s">category one</a></li>
-												<li><a href="" class="tran3s">category two</a></li>
-												<li><a href="" class="tran3s">category three</a></li>
+											<ul class="sub-menu" id = "category">
+												
 											</ul>
 										</li>
-
-										<li class="dropdown-holder"><a href="#">traffic</a>
-											<ul class="sub-menu">
-												<li><a href="" class="tran3s">zero</a></li>
-												<li><a href="" class="tran3s">one</a></li>
-												<li><a href="" class="tran3s">two</a></li>
-												<li><a href="" class="tran3s">three</a></li>
-												<li><a href="" class="tran3s">four</a></li>
-											</ul>
-										</li>
-
 
 										<li class="dropdown-holder"><a href="#">about</a>
 											<ul class="sub-menu">
@@ -138,25 +125,23 @@
 			</section>
 
 
-			<!-- Our Pet Services ____________________________ -->
-			<section class="our-pet-services-section">
+			<!-- Our   ____________________________ -->
+			<section class="our--section">
 				<div class="container">
 					<div class="them-title text-center">
 						<span></span>
 						<h2>遊四方</h2>
 						<p>People travel is not to get somewhere， but for tourism.</p>
 					</div>
-
-					<div id = "test"></div>
-
-					<div class="row our-pet-services" id = 'post'>
+                    <div  id = 'posts'>
+					<div class="row our-" id = 'post'>
 						
 						
 						
 					</div>
+                    </div>
 				</div>
 			</section>
-
 
 		
 
@@ -169,7 +154,12 @@
 	 	<div id="loader-wrapper">
 			<div id="loader"></div>
 		</div>
-	
+
+ 
+		<div class="page-icon">
+			<span class="page-current" id = "page"></span>
+		</div>
+     
 
 
 		<!-- js file -->
@@ -193,7 +183,7 @@
 		<script src="vendor/jquery.countTo.js"></script>
 		<!-- fancybox -->
 		<script src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
-		<!-- Gallery - isotop -->
+		<!--  - isotop -->
 		<script type="text/javascript" src="vendor/isotope.pkgd.min.js"></script>
 		<!-- WOW js -->
 		<script type="text/javascript" src="vendor/WOW-master/dist/wow.min.js"></script>

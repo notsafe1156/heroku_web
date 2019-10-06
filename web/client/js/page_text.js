@@ -6,7 +6,7 @@ $(document).ready(function ()
   id = url.searchParams.get('id');
 
   $.ajax({                                    
-    url: 'https://djangotest1156.herokuapp.com/api/RSS/raw_sql_query/',
+    url: 'https://djangotest1156.herokuapp.com/api/RSS/get_text/', 
     type: "GET",                                   
     dataType: 'json',   
     data:{"id":id},            
@@ -15,8 +15,8 @@ $(document).ready(function ()
 
       var text = Data[0]["text"];
       var img = Data[0]["images"].replace('{', '');
-      img =img.replace('}', '');
-      img=img.split(',');
+      img = img.replace('}', '');
+      img = img.split(',');
 
       var title = Data[0]["title"];
       //text =text.replace(/,img,/g, '');
@@ -46,10 +46,10 @@ $(document).ready(function ()
     $('#text').append(item);
 
     //share the post
-     share = ''+'<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fheroku-web1156.herokuapp.com%2Fservice-details.html%3Fid%3D'+id+'%26name%3D&quote=" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="images/social_flat_rounded_rects_svg/Facebook.svg" /></a></li>'+
-            '<li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fheroku-web1156.herokuapp.com%2Fservice-details.html%3Fid%3D'+id+'%26name%3D&text=:%20https%3A%2F%2Fheroku-web1156.herokuapp.com%2Fservice-details.html%3Fid%3D'+id+'%26name%3D" target="_blank" title="Tweet"><img alt="Tweet" src="images/social_flat_rounded_rects_svg/Twitter.svg" /></a></li>'+
-            '<li><a href="mailto:?subject=&body=:%20https%3A%2F%2Fheroku-web1156.herokuapp.com%2Fservice-details.html%3Fid%3D'+id+'%26name%3D" target="_blank" title="Send email"><img alt="Send email" src="images/social_flat_rounded_rects_svg/Email.svg" /></a></li>';
-      $('#Share').append(share);
+    share = ''+'<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fheroku-web1156.herokuapp.com%2Fservice-details.html%3Fid%3D'+id+'%26name%3D&quote=" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="images/social_flat_rounded_rects_svg/Facebook.svg" /></a></li>'+
+    '<li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fheroku-web1156.herokuapp.com%2Fservice-details.html%3Fid%3D'+id+'%26name%3D&text=:%20https%3A%2F%2Fheroku-web1156.herokuapp.com%2Fservice-details.html%3Fid%3D'+id+'%26name%3D" target="_blank" title="Tweet"><img alt="Tweet" src="images/social_flat_rounded_rects_svg/Twitter.svg" /></a></li>'+
+    '<li><a href="mailto:?subject=&body=:%20https%3A%2F%2Fheroku-web1156.herokuapp.com%2Fservice-details.html%3Fid%3D'+id+'%26name%3D" target="_blank" title="Send email"><img alt="Send email" src="images/social_flat_rounded_rects_svg/Email.svg" /></a></li>';
+    $('#Share').append(share);
         
     }
     
