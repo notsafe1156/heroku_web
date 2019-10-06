@@ -19,12 +19,11 @@
 
         <div>
             <label for="inputPassword">Password</label>
-            <input type="password" id="inputPassword" class="form-control_login" required>
+            <input  type="password" id="inputPassword" class="form-control_login"  required>
         </div>
 
-
         <div class="checkbox mb-3">
-            <input type="checkbox" value="remember-me"> Remember me
+            <input type="checkbox" id="remeber" value="remember-me"> Remember me
         </div>
 
         <div>
@@ -34,8 +33,13 @@
 </body>
 
 <script>
+    var remeber_account;
+    var remeber_account_text;
+    remeber_account = document.cookie;
+    remeber_account_text = remeber_account.substr(5);
+    $("#inputaccount").val(remeber_account_text);
     $("#as").click(function () {
-        if ($("#inputaccount").val() == "" || $("#inputPassword").val() == "") {
+        if ($("#inputaccount").val() == "" || $("#inputPassword").val() == ""){
             alert("帳號密碼不可為空！！")
             return
         }
@@ -47,9 +51,16 @@
                 "password": $("#inputPassword").val()
             },
             success: function (result) {
-                if (result) {
-                    window.location.href = "manage.html?" + result + $("#inputaccount").val();
-                } else {
+                if (result){
+                    if($("#remeber").prop("checked")){
+                        document.cookie = "user="+$("#inputaccount").val();
+                        window.location.href="manage.html?"+result+$("#inputaccount").val();
+                    }else{
+                        document.cookie = "user="+""
+                        window.location.href="manage.html?"+result+$("#inputaccount").val();
+                    }
+                }
+                else {
                     alert("登入失敗")
                 }
             },
@@ -58,9 +69,8 @@
             }
         });
     });
-
     function enter() {
-        if (event.keyCode == 13) {
+        if(event.keyCode ==13) {
             if ($("#inputaccount").val() == "" || $("#inputPassword").val() == "") {
                 alert("帳號密碼不可為空！！")
                 return
@@ -74,8 +84,15 @@
                 },
                 success: function (result) {
                     if (result) {
-                        window.location.href = "manage.html?" + result + $("#inputaccount").val();
-                    } else {
+                        if($("#remeber").prop("checked")){
+                            document.cookie = "user="+$("#inputaccount").val();
+                            window.location.href="manage.html?"+result+$("#inputaccount").val();
+                        }else{
+                            document.cookie = "user="+""
+                            window.location.href="manage.html?"+result+$("#inputaccount").val();
+                        }
+                    }
+                    else {
                         alert("登入失敗")
                     }
                 },
@@ -87,4 +104,3 @@
     }
 </script>
 </html>
-

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="" />
+    <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/server/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/server/manage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/manage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/server/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/manage.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,14 +158,7 @@
       <workItem from="1570354409975" duration="43000" />
       <workItem from="1570354468086" duration="76000" />
       <workItem from="1570355263842" duration="4652000" />
-      <workItem from="1570361364186" duration="7230000" />
-    </task>
-    <task id="LOCAL-00003" summary="init">
-      <created>1569574340148</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1569574340148</updated>
+      <workItem from="1570361364186" duration="11122000" />
     </task>
     <task id="LOCAL-00004" summary="init">
       <created>1569575384397</created>
@@ -498,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570368676302</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="fix enter_search_text">
+      <created>1570368982228</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1570368982228</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -535,7 +540,8 @@
     <MESSAGE value="update server" />
     <MESSAGE value="update" />
     <MESSAGE value="fix option value" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix option value" />
+    <MESSAGE value="fix enter_search_text" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix enter_search_text" />
   </component>
   <component name="WindowStateProjectService">
     <state x="567" y="347" key="FileChooserDialogImpl" />

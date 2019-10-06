@@ -24,7 +24,7 @@
 </style>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar ">
         <a class="navbar-brand" href="manage.html">後臺管理系統</a>
         <!--        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"-->
         <!--                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
@@ -40,54 +40,69 @@
 
     </nav>
 
-    <div class="search-bar">
-        <div onkeydown="enter_search_text()">
-            <input type="text" id="search_target" placeholder="輸入關鍵字">
-            <input type="button" value="搜尋" onclick="search_text()">
+    <nav class="left-bar">
+        <ul>
+            <li>
+                <a href="">網頁管理</a>
+            </li>
+            <li>
+                <a href="">來源管理</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="text">
+        <div class="search-bar">
+            <div onkeydown="enter_search_text()">
+                <input type="text" id="search_target" placeholder="輸入關鍵字">
+                <input type="button" value="搜尋" onclick="search_text()">
+            </div>
         </div>
+
+        <table class="tab" id="tab" border="1" align="center">
+
+            <tr class="ro">
+                <th width=30%>
+                    標題
+                </th>
+
+                <th width=10%>
+                    <select id="source_filter" onChange="change_source_data()">
+                        <option value="">來源</option>
+                    </select>
+                </th>
+
+                <th width=15%>
+                    類別
+                </th>
+
+                <th width=15%>
+                    TAG
+                </th>
+
+                <th width=6% class="display_filter">
+                    顯示
+                </th>
+
+                <th width=8% colspan="2">
+
+                </th>
+
+            </tr>
+
+        </table>
+
+        <table>
+            <tr>
+                <p align="center">
+                    <input type="button" onclick="before_clear_table()" id="leftButton" value="before"></input>
+                    <input type="button" onclick="next_clear_table()" id="rightButton" value="next"></input>
+                </p>
+            </tr>
+        </table>
     </div>
 
-    <table class="tab" id="tab" border="1" align="center">
 
-        <tr class="ro">
-            <th width=30%>
-                標題
-            </th>
-
-            <th width=10%>
-                <select id="source_filter" onChange="change_source_data()">
-                    <option value="">來源</option>
-                </select>
-            </th>
-
-            <th width=15%>
-                類別
-            </th>
-
-            <th width=15%>
-                TAG
-            </th>
-
-            <th width=6% class="display_filter">
-                顯示
-            </th>
-
-            <th width=8% colspan="2">
-
-            </th>
-
-        </tr>
-
-    </table>
-
-    <table>
-        <tr>
-            <p align="center">
-                <input type="button" onclick="before_clear_table()" id="leftButton" value="before"></input>
-                <input type="button" onclick="next_clear_table()" id="rightButton" value="next"></input>
-            </p>
-        </tr>
-    </table>
     <script src="jquery-3.4.1.js"></script>
 
     <script>
