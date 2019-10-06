@@ -1,8 +1,8 @@
 
 body {
     background-color: rgb(219, 219, 219);
-    font-family: ＤＦブラッシュＳＱW9, Microsoft JhengHei, serif;
 }
+
 
 .text {
     float: left;
@@ -13,7 +13,7 @@ table {
     background-color: rgb(255, 255, 255);
     border-collapse: collapse;
     width: 100%;
-    margin:0 auto;
+    margin: 0 auto;
     word-wrap: break-word;
     table-layout: fixed;
     overflow: hidden;
@@ -126,8 +126,11 @@ h6 {
 
 .navbar-brand {
     /*color: #b1d3ed;*/
+    font-size: 3rem;
     color: whitesmoke;
+
 }
+
 
 .mamber {
     float: right;
