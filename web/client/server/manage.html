@@ -256,7 +256,7 @@
             var ntpage = 0;
             ntpage = page + 1;
             page = ntpage;
-            $("#tab tr:not(:first)").html("");
+            clear_table();
             call_data(ntpage);
         }
     }
@@ -265,7 +265,7 @@
             var bfpage;
             bfpage = page - 1;
             page = bfpage;
-            $("#tab tr:not(:first)").html("");
+            clear_table();
             call_data(bfpage);
         }
     }

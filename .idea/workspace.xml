@@ -37,8 +37,8 @@
         <option value="Python Script" />
         <option value="package.json" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -182,14 +182,7 @@
       <workItem from="1570432758685" duration="336000" />
       <workItem from="1570433105368" duration="9136000" />
       <workItem from="1570451633111" duration="6049000" />
-      <workItem from="1570458126093" duration="2650000" />
-    </task>
-    <task id="LOCAL-00012" summary="update">
-      <created>1569577220613</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1569577220613</updated>
+      <workItem from="1570458126093" duration="2925000" />
     </task>
     <task id="LOCAL-00013" summary="update">
       <created>1569578209375</created>
@@ -527,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570460397843</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="fix some ui bugs">
+      <created>1570460933788</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1570460933788</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,7 +568,8 @@
     <MESSAGE value="update manage" />
     <MESSAGE value="update source_manage" />
     <MESSAGE value="update the manage UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="update the manage UI" />
+    <MESSAGE value="fix some ui bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix some ui bugs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="567" y="347" key="FileChooserDialogImpl" />
