@@ -117,38 +117,12 @@
     if (source_data == null) {
         source_data = "";
     }
-    var all_page;
     var final_hash;/*source 要得hash*/
     var user_name;/*source 要得account*/
-    var local_hash;
-    var url = window.location.search;
-    var hash = url.substr(1);
-    if (hash != "") {
-        if (hash.substr(0, 10) < 0) {
-            localStorage.user = hash;
-            local_hash = localStorage.user;
-            final_hash = local_hash.substr(0, 20);
-            user_name = local_hash.substr(20);
+
+            final_hash = localStorage.hash;
+            user_name = localStorage.user;
             document.getElementById("account").innerHTML = user_name;
-        } else {
-            localStorage.user = hash;
-            local_hash = localStorage.user;
-            final_hash = local_hash.substr(0, 19);
-            user_name = local_hash.substr(19);
-            document.getElementById("account").innerHTML = user_name;
-        }
-    } else {
-        local_hash = localStorage.user;
-        if (local_hash.substr(0, 10) < 0) {
-            final_hash = local_hash.substr(0, 20);
-            user_name = local_hash.substr(20);
-            document.getElementById("account").innerHTML = user_name;
-        } else {
-            final_hash = local_hash.substr(0, 19);
-            user_name = local_hash.substr(19);
-            document.getElementById("account").innerHTML = user_name;
-        }
-    }
 
     $(function () {
         $.ajax({
