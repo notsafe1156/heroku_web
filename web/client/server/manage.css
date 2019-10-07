@@ -1,4 +1,3 @@
-
 body {
     background-color: rgb(219, 219, 219);
 }
@@ -200,3 +199,5 @@ h6 {
     color: gainsboro;
     text-decoration: none;
 }
+.ui-widget-header { border: 1px solid #aaaaaa; background-color:red; color: #222222; font-weight: bold; }
+

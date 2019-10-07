@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/web/client/server/page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/client/server/source_manage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/client/server/source_manage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/server/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/server/manage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/manage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/client/server/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/server/modify.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/modify.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +46,8 @@
         <option value="Python Script" />
         <option value="package.json" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -61,9 +69,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/client/server" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -76,17 +86,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client" />
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client\server" />
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\server" />
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client" />
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client\server" />
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client" />
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\server" />
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -101,7 +111,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.login.html">
+    <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/admin_page/web/client/server/login.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="source_manage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/admin_page/web/client/server/source_manage.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/admin_page/web/client/server/test.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="admin_page" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -124,6 +143,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.login.html" />
+        <item itemvalue="JavaScript Debug.source_manage.html" />
+        <item itemvalue="JavaScript Debug.test.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -157,14 +183,9 @@
       <workItem from="1570354409975" duration="43000" />
       <workItem from="1570354468086" duration="76000" />
       <workItem from="1570355263842" duration="4652000" />
-      <workItem from="1570361364186" duration="14627000" />
-    </task>
-    <task id="LOCAL-00006" summary="update Procfile">
-      <created>1569575911900</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1569575911900</updated>
+      <workItem from="1570361364186" duration="14752000" />
+      <workItem from="1570432758685" duration="336000" />
+      <workItem from="1570433105368" duration="5474000" />
     </task>
     <task id="LOCAL-00007" summary="update index.php">
       <created>1569576086861</created>
@@ -502,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570374319609</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="update manage">
+      <created>1570376331927</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1570376331927</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +568,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="fix option value" />
     <MESSAGE value="fix enter_search_text" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix enter_search_text" />
+    <MESSAGE value="update manage" />
+    <option name="LAST_COMMIT_MESSAGE" value="update manage" />
   </component>
   <component name="WindowStateProjectService">
     <state x="567" y="347" key="FileChooserDialogImpl" />
