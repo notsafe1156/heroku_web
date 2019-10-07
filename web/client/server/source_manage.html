@@ -258,12 +258,24 @@
     }
 
     function add_source() {
+        var num = $(".number").text()
+        var id = '';
+        for (i=1; i <= num.length; i++) {
+            if (i != num[i-1]) {
+                id = i;
+                break;
+            }
+        }
+        if (!id) {
+            id = num.length+1;
+        }
         $.ajax({
             type: 'post',
             url: "https://djangotest1156.herokuapp.com/api/RSS/add_source/",
             data: {
                 "name": $("#source_name").val(),
-                "link": $("#source_href").val()
+                "link": $("#source_href").val(),
+                "id": id
             },
             success: function () {
                 alert("新增成功");
