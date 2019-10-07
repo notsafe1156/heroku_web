@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/client/server/jqueryui_smoothness.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/client/server/source_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/source_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/server/source_manage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/source_manage.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -180,14 +178,7 @@
       <workItem from="1570355263842" duration="4652000" />
       <workItem from="1570361364186" duration="14752000" />
       <workItem from="1570432758685" duration="336000" />
-      <workItem from="1570433105368" duration="7874000" />
-    </task>
-    <task id="LOCAL-00009" summary="update index.php">
-      <created>1569576470088</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1569576470088</updated>
+      <workItem from="1570433105368" duration="8325000" />
     </task>
     <task id="LOCAL-00010" summary="change name">
       <created>1569576908502</created>
@@ -525,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570439881270</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="update source_manage">
+      <created>1570441214517</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1570441214517</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
