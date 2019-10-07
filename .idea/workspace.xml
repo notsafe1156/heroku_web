@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/web/client/server/source_manage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/source_manage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/client/server/32d6d04ecabf5a116432f2e4586a021b.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/server/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/server/manage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/manage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/server/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/manage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,8 +108,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.login.html">
+  <component name="RunManager" selected="JavaScript Debug.manage.html">
     <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/admin_page/web/client/server/login.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="manage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/admin_page/web/client/server/manage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="source_manage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/admin_page/web/client/server/source_manage.html" useBuiltInWebServerPort="true">
@@ -138,6 +145,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.manage.html" />
         <item itemvalue="JavaScript Debug.login.html" />
         <item itemvalue="JavaScript Debug.source_manage.html" />
         <item itemvalue="JavaScript Debug.test.html" />
@@ -178,14 +186,9 @@
       <workItem from="1570355263842" duration="4652000" />
       <workItem from="1570361364186" duration="14752000" />
       <workItem from="1570432758685" duration="336000" />
-      <workItem from="1570433105368" duration="8325000" />
-    </task>
-    <task id="LOCAL-00010" summary="change name">
-      <created>1569576908502</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1569576908502</updated>
+      <workItem from="1570433105368" duration="9136000" />
+      <workItem from="1570451633111" duration="6049000" />
+      <workItem from="1570458126093" duration="2142000" />
     </task>
     <task id="LOCAL-00011" summary="update">
       <created>1569577011151</created>
@@ -523,7 +526,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570441214517</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="update source_manage">
+      <created>1570441648908</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1570441648908</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
