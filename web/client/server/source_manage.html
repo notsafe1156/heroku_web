@@ -258,10 +258,10 @@
     }
 
     function add_source() {
-        var num = $(".number").text()
+        var num = $(".number p");
         var id = '';
-        for (i=1; i <= num.length; i++) {
-            if (i != num[i-1]) {
+        for (i=1; i < num.length; i++) {
+            if (i != num[i-1].innerHTML) {
                 id = i;
                 break;
             }
@@ -280,7 +280,7 @@
             success: function () {
                 alert("新增成功");
                 $("#add_tab").dialog("close");
-                location.reload(true);
+                // location.reload(true);
             },
             error: function () {
                 alert("新增失敗")
