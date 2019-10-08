@@ -12,11 +12,13 @@
 
 <style>
     .tab tr:nth-child(odd) {
-        background: rgb(238, 238, 238)
+        /*background: rgb(238, 238, 238)*/
+        height: 8vh;
     }
 
     .tab tr:nth-child(even) {
-        background: #FFF
+        /*background: #FFF*/
+        height: 8vh;
     }
 
     .tab tr:hover {
@@ -56,7 +58,7 @@
     </nav>
 
     <div class="text">
-
+        <h2>來源管理</h2>
         <div class="search-bar">
             <input type="button" id="new" value="新增">
             <div id="add_tab" style="display: none">
@@ -69,7 +71,7 @@
 
         <table class="tab" id="tab" align="center" rules="rows">
 
-            <tr class="ro">
+            <tr class="ro" id="table-first">
                 <th width=3%>
                     編號
                 </th>
@@ -171,11 +173,11 @@
     function append_source_table(data) {
         $('.tab').append(
             $('<tr>').append(
-                $('<td class="number">').append(
+                $('<td class="number" style="text-align: center">').append(
                     $('<p>',
                         {text: data[0]})
                 ),
-                $('<td class="source">').append(
+                $('<td class="source" style="text-align: center">').append(
                     $('<p>',
                         {text: data[1]})
                 ),

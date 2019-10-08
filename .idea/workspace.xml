@@ -4,7 +4,7 @@
     <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/client/server/manage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/manage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/client/server/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/server/source_manage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/source_manage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/client/server/source_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/source_manage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -188,14 +188,7 @@
       <workItem from="1570433105368" duration="9136000" />
       <workItem from="1570451633111" duration="6049000" />
       <workItem from="1570458126093" duration="3623000" />
-      <workItem from="1570546715850" duration="1900000" />
-    </task>
-    <task id="LOCAL-00014" summary="update">
-      <created>1569578315706</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1569578315706</updated>
+      <workItem from="1570546715850" duration="3689000" />
     </task>
     <task id="LOCAL-00015" summary="update">
       <created>1569578413001</created>
@@ -533,7 +526,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570461262474</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="fix the ui">
+      <created>1570549716228</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1570549716228</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -576,7 +576,8 @@
     <MESSAGE value="update the manage UI" />
     <MESSAGE value="fix some ui bugs" />
     <MESSAGE value="fix some ui issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix some ui issues" />
+    <MESSAGE value="fix the ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix the ui" />
   </component>
   <component name="WindowStateProjectService">
     <state x="567" y="347" key="FileChooserDialogImpl" />
