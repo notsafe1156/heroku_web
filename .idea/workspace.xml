@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="" />
+    <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/server/manage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/manage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/server/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/server/source_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/source_manage.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +107,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.manage.html">
+  <component name="RunManager" selected="JavaScript Debug.login.html">
     <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/admin_page/web/client/server/login.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -139,8 +144,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.manage.html" />
         <item itemvalue="JavaScript Debug.login.html" />
+        <item itemvalue="JavaScript Debug.manage.html" />
         <item itemvalue="JavaScript Debug.source_manage.html" />
         <item itemvalue="JavaScript Debug.test.html" />
       </list>
@@ -182,14 +187,8 @@
       <workItem from="1570432758685" duration="336000" />
       <workItem from="1570433105368" duration="9136000" />
       <workItem from="1570451633111" duration="6049000" />
-      <workItem from="1570458126093" duration="2925000" />
-    </task>
-    <task id="LOCAL-00013" summary="update">
-      <created>1569578209375</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1569578209375</updated>
+      <workItem from="1570458126093" duration="3623000" />
+      <workItem from="1570546715850" duration="1900000" />
     </task>
     <task id="LOCAL-00014" summary="update">
       <created>1569578315706</created>
@@ -527,7 +526,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570460933788</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="fix some ui issues">
+      <created>1570461262474</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1570461262474</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,7 +575,8 @@
     <MESSAGE value="update source_manage" />
     <MESSAGE value="update the manage UI" />
     <MESSAGE value="fix some ui bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix some ui bugs" />
+    <MESSAGE value="fix some ui issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix some ui issues" />
   </component>
   <component name="WindowStateProjectService">
     <state x="567" y="347" key="FileChooserDialogImpl" />
