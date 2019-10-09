@@ -255,4 +255,21 @@ h6 {
 
 .ui-widget-header { border: 1px solid #aaaaaa; background-color:red; color: #222222; font-weight: bold; }
 
+.page-table {
+    width: 20%;
+    margin: 1% auto;
+}
 
+
+.page-table input {
+    width: 70%;
+    margin-right: 10%;
+}
+
+.page-table div {
+    margin-right: 0;
+}
+
+#search-page {
+    width: 40%;
+}

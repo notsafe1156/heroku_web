@@ -12,15 +12,19 @@
     .tab tr:nth-child(odd) {
         background: rgb(238, 238, 238)
     }
+
     .tab tr:nth-child(even) {
         background: #FFF
     }
+
     .tab tr:hover {
         background-color: rgb(211, 211, 211);
     }
+
     body {
-        font-family: "Microsoft YaHei",cursive;
+        font-family: "Microsoft YaHei", cursive;
     }
+
     .navbar-brand {
         font-size: xx-large;
     }
@@ -95,14 +99,17 @@
 
         </table>
 
-        <table>
+        <table class="page-table">
             <tr>
-                <td align="right"><input type="button" onclick="before_clear_table()" id="leftButton" value="before" >
+                <td>
+                    <input type="button" onclick="before_clear_table()" id="last-page" value="上一頁">
                 </td>
-                        <td align="center"><div onkeydown="search_page()">
-                                <input type="text" id="search_page">
-                        </div></td>
-                <td><input type="button" onclick="next_clear_table()" id="rightButton" value="next" >
+                <td>
+                    <input type="text" id="search-page" onkeydown="search_page()">
+                    <label id="total-page"></label>
+                </td>
+                <td>
+                    <input type="button" onclick="next_clear_table()" id="next-page" value="下一頁">
                 </td>
             </tr>
         </table>
@@ -117,8 +124,8 @@
     var test_page = localStorage.getItem("record_page");
     if (test_page == null) {
         page = 1;
-    }else{
-       page = parseInt(localStorage.getItem("record_page"));
+    } else {
+        page = parseInt(localStorage.getItem("record_page"));
     }
     var source_data = localStorage.getItem("record_source");
     if (source_data == null) {
@@ -128,9 +135,9 @@
     var final_hash;
     var user_name;
 
-            final_hash = localStorage.hash;
-            user_name =localStorage.user;
-            document.getElementById("account").innerHTML = user_name;
+    final_hash = localStorage.hash;
+    user_name = localStorage.user;
+    document.getElementById("account").innerHTML = user_name;
     $(function () {/*API操作和顯示區*/<!--- 初始 -->
         var source_text;
         source_text = source_data;
@@ -139,9 +146,9 @@
             url: "https://djangotest1156.herokuapp.com/api/RSS/get_source/",
             success: function (result) {
                 append_dropdown(result);
+
             }
         });
-        console.log(page, source_text);
         $.ajax({
             type: 'post',
             url: "https://djangotest1156.herokuapp.com/api/RSS/get_info_for_page/" + "?page=" + page + "&source=" + source_text,
@@ -154,17 +161,20 @@
                 $.each(result[0], function (index, element) {
                     append_table(element);
                 });
+                $("#total-page").text('/'+all_page);
             },
             error: function () {
                 alert("錯誤")
             }
         });
     });
+
     function enter_search_text() {
         if (event.keyCode == 13) {
             search_text();
         }
     }
+
     function change_source() {/*API操作和顯示區*/<!--- 初始 -->
         var source_text;
         source_text = source_data;
@@ -187,11 +197,13 @@
             }
         });
     }
+
     function change_source_data() {
         source_data = $("#source_filter").val();
         page = 1;
         change_source();
     }
+
     function append_table(data) {
         $('.tab').append(
             $('<tr>').append(
@@ -225,8 +237,9 @@
         );
         $("td.edit").children("p").css("display", "none");
     }
+
     function call_data(num) {
-        page =parseInt(page);
+        page = parseInt(page);
         var source_call;
         source_call = source_data;
         $.ajax({
@@ -240,13 +253,14 @@
                 $.each(result[0], function (index, element) {
                     append_table(element);
                 });
-                $('html,body').animate({ scrollTop: 0 }, 0);
+                $('html,body').animate({scrollTop: 0}, 0);
             },
             error: function () {
                 alert("錯誤")
             }
         });
     }
+
     function next_clear_table() {
         if (page <= all_page - 0.5) {
             var ntpage = 0;
@@ -256,6 +270,7 @@
             call_data(ntpage);
         }
     }
+
     function before_clear_table() {
         if (page != 1) {
             var bfpage;
@@ -265,6 +280,7 @@
             call_data(bfpage);
         }
     }
+
     function search_text() {
         let se_ta = document.getElementById("search_target");
         console.log(se_ta);
@@ -272,9 +288,11 @@
         console.log(text);
         search(text);
     }
+
     function clear_table() {
         $("#tab tr:not(:first)").html("");
     }
+
     function search(target) {
         $.ajax({
             type: 'post',
@@ -298,11 +316,15 @@
 
     function search_page() {
         if (event.keyCode == 13) {
-            page = $("#search_page").val();
+            page = $("#search-page").val();
+            console.log(page);
             if (page <= all_page) {
                 clear_table();
                 call_data(page);
-                $("#search_page").val("");
+                $("#search-page").val("");
+            }
+            else {
+
             }
         }
     }
@@ -316,6 +338,7 @@
             )
         }
     }
+
     function Edit_Id(e) {
         let EdId = e.nextSibling;
         var EID = EdId.innerHTML;
@@ -324,11 +347,13 @@
         localStorage.setItem("record_source", source_data);
         window.location.href = "modify.html" + "?" + "id=" + EID;
     }
+
     function Delete_Id(e) {
         let DeId = e.nextSibling;
         var DID = DeId.innerHTML;
         Delete_Data(DID);
     }
+
     function Delete_Data(DID) {
         console.log(DID);
         console.log('asd');
@@ -352,6 +377,7 @@
             });
         })
     }
+
     function log_out() {
         var expire_days = 1; // 過期日期(天)
         var d = new Date();
