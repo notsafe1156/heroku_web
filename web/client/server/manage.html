@@ -10,31 +10,24 @@
 
 <style>
     .tab tr:nth-child(odd) {
-        /*background: rgb(238, 238, 238);*/
-        height: 8vh;
+        background: rgb(238, 238, 238)
     }
-
     .tab tr:nth-child(even) {
-        /*background: #FFF;*/
-        height: 8vh;
+        background: #FFF
     }
-
     .tab tr:hover {
-        /*background-color: rgb(211, 211, 211);*/
-        background-color: rgba(212, 212, 212, 0.71);
+        background-color: rgb(211, 211, 211);
     }
-
     body {
-        font-family: "Microsoft YaHei", cursive;
+        font-family: "Microsoft YaHei",cursive;
     }
-
     .navbar-brand {
         font-size: xx-large;
     }
 </style>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar ">
         <a class="navbar-brand" href="manage.html">後臺管理系統</a>
         <!--        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"-->
         <!--                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
@@ -63,15 +56,15 @@
     <div class="text">
         <h2 class="text">文章管理</h2>
         <div class="search-bar">
-            <div onkeydown="enter_search_text()" class="input-keydown">
+            <div onkeydown="enter_search_text()">
                 <input type="text" id="search_target" placeholder="輸入關鍵字">
-                <input id="search-button" type="button" value="搜尋" onclick="search_text()">
+                <input type="button" value="搜尋" onclick="search_text(this)">
             </div>
         </div>
 
-        <table class="tab" id="tab" align="center" rules="rows">
+        <table class="tab" id="tab" border="1" align="center">
 
-            <tr id="table-first">
+            <tr class="ro">
                 <th width=30%>
                     標題
                 </th>
@@ -102,13 +95,15 @@
 
         </table>
 
-        <hr>
         <table>
             <tr>
-                <p align="center">
-                    <input type="button" onclick="before_clear_table()" id="leftButton" value="before"></input>
-                    <input type="button" onclick="next_clear_table()" id="rightButton" value="next"></input>
-                </p>
+                <td align="right"><input type="button" onclick="before_clear_table()" id="leftButton" value="before" >
+                </td>
+                        <td align="center"><div onkeydown="search_page()">
+                                <input type="text" id="search_page">
+                        </div></td>
+                <td><input type="button" onclick="next_clear_table()" id="rightButton" value="next" >
+                </td>
             </tr>
         </table>
     </div>
@@ -123,7 +118,7 @@
     if (test_page == null) {
         page = 1;
     }else{
-        page = parseInt(localStorage.getItem("record_page"));
+       page = parseInt(localStorage.getItem("record_page"));
     }
     var source_data = localStorage.getItem("record_source");
     if (source_data == null) {
@@ -133,9 +128,9 @@
     var final_hash;
     var user_name;
 
-    final_hash = localStorage.hash;
-    user_name =localStorage.user;
-    document.getElementById("account").innerHTML = user_name;
+            final_hash = localStorage.hash;
+            user_name =localStorage.user;
+            document.getElementById("account").innerHTML = user_name;
     $(function () {/*API操作和顯示區*/<!--- 初始 -->
         var source_text;
         source_text = source_data;
@@ -199,12 +194,12 @@
     }
     function append_table(data) {
         $('.tab').append(
-            $('<tr class="append-data">').append(
+            $('<tr>').append(
                 $('<td class="title">').append(
                     $('<p>',
                         {text: data[1]})
                 ),
-                $('<td class="source" style="text-align: center">').append(
+                $('<td class="source">').append(
                     $('<p>',
                         {text: data[2]})
                 ),
@@ -216,7 +211,7 @@
                     $('<p>',
                         {text: data[4]})
                 ),
-                $('<td class="display" style="text-align: center">').append(
+                $('<td class="display">').append(
                     $('<p>',
                         {text: data[5]})
                 ),
@@ -231,6 +226,7 @@
         $("td.edit").children("p").css("display", "none");
     }
     function call_data(num) {
+        page =parseInt(page);
         var source_call;
         source_call = source_data;
         $.ajax({
@@ -256,7 +252,7 @@
             var ntpage = 0;
             ntpage = page + 1;
             page = ntpage;
-            clear_table();
+            $("#tab tr:not(:first)").html("");
             call_data(ntpage);
         }
     }
@@ -265,7 +261,7 @@
             var bfpage;
             bfpage = page - 1;
             page = bfpage;
-            clear_table();
+            $("#tab tr:not(:first)").html("");
             call_data(bfpage);
         }
     }
@@ -277,8 +273,7 @@
         search(text);
     }
     function clear_table() {
-        // $("#tab tr:not(:first)").html("");
-        $(".append-data").remove();
+        $("#tab tr:not(:first)").html("");
     }
     function search(target) {
         $.ajax({
@@ -300,6 +295,19 @@
             }
         });
     }
+
+    function search_page() {
+        if (event.keyCode == 13) {
+            page = $("#search_page").val();
+            if (page <= all_page) {
+                clear_table();
+                call_data(page);
+                $("#search_page").val("");
+            }
+        }
+    }
+
+
     function append_dropdown(data) {
         for (var i = 0; i < data.length; i++) {
             $('#source_filter').append(
@@ -345,7 +353,13 @@
         })
     }
     function log_out() {
+        var expire_days = 1; // 過期日期(天)
+        var d = new Date();
+        d.setTime(d.getTime() - (expire_days * 10 * 60 * 1000));
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = "expire_days=ten_minute" + "; " + expires + ";"
         localStorage.clear();
+
     }
 </script>
 </html>

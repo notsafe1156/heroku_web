@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/client/server/manage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/manage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/client/server/source_manage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/source_manage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/client/server/source_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/source_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/server/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/server/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/manage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,17 +81,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client" />
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client\server" />
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client" />
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\server" />
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client" />
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -188,14 +187,8 @@
       <workItem from="1570433105368" duration="9136000" />
       <workItem from="1570451633111" duration="6049000" />
       <workItem from="1570458126093" duration="3623000" />
-      <workItem from="1570546715850" duration="3689000" />
-    </task>
-    <task id="LOCAL-00015" summary="update">
-      <created>1569578413001</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1569578413001</updated>
+      <workItem from="1570546715850" duration="3946000" />
+      <workItem from="1570592723125" duration="479000" />
     </task>
     <task id="LOCAL-00016" summary="update">
       <created>1569578437522</created>
@@ -533,7 +526,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570549716228</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="fix the ui">
+      <created>1570551585170</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1570551585170</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
