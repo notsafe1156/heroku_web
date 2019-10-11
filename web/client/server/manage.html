@@ -106,11 +106,11 @@
         <table id="page-area">
             <tr>
                 <p align="center">
-                    <input type="button" onclick="before_clear_table()" id="leftButton" value="before"></input>
+                    <input type="button" onclick="before_clear_table()" id="leftButton" value="上一頁"></input>
                     <input id="search-page" type="text" onkeydown="search_page()" onfocus ="this.select()">
                     <label>/</label>
                     <label id="total-page"></label>
-                    <input type="button" onclick="next_clear_table()" id="rightButton" value="next"></input>
+                    <input type="button" onclick="next_clear_table()" id="rightButton" value="下一頁"></input>
                 </p>
             </tr>
         </table>
@@ -194,6 +194,8 @@
                 $.each(result[0], function (index, element) {
                     append_table(element);
                 });
+                $("#total-page").text(all_page);
+                $("#search-page").val(1);
             },
             error: function () {
                 alert("錯誤")
@@ -205,9 +207,9 @@
         page = 1;
         change_source();
     }
+
     function append_table(data) {
-        if(data[5] == true) {
-            $('.tab').append(
+        $('.tab').append(
                 $('<tr class="append-data">').append(
                     $('<td class="title">').append(
                         $('<p>',
@@ -217,7 +219,7 @@
                         $('<p>',
                             {text: data[2]})
                     ),
-                    $('<td class="category">').append(
+                    $('<td class="category" style="text-align: center">').append(
                         $('<p>',
                             {text: data[3].replace('{', '').replace('}', '')})
                     ),
@@ -226,15 +228,14 @@
                             {text: data[4]})
                     ),
                     $('<td class="display" style="text-align: center">').append(
-                        $('<input type="checkbox" checked="checked" name="myCheckbox" onclick="change_display(this)"/>'),
-                        $('<p>', {text: data[0]}),
-                        $('<p>', {text: data[5]})
+                        '<input type="checkbox" name="myCheckbox" onclick="change_display(this)" ' + (data[5]? 'checked="checked"' : '') + '/>',
+                        $('<p>', {text: data[0]})
                     ),
                     $('<td colspan="2" class="edit">').append(
                         
-                        $('<input type="button" onclick="Edit_Id(this)" value="編輯" style="margin:5%;width:40%;height:100%; float: left">'),
+                        $('<input type="button" onclick="Edit_Id(this)" value="編輯" style="width:40%; float: left">'),
                         $('<p>', {text: data[0]}),
-                        $('<input type="button" onclick="Delete_Id(this)" value="刪除" style="margin:5%;width:40%;height:100%; float: right">'),
+                        $('<input type="button" onclick="Delete_Id(this)" value="刪除" style="width:40%; float: right">'),
                         $('<p>', {text: data[0]})
                     )
                 )
@@ -242,41 +243,79 @@
             $("td.edit").children("p").css("display", "none");
             $("td.display").children("p").css("display", "none");
         }
-        else{
-            $('.tab').append(
-                $('<tr class="append-data">').append(
-                    $('<td class="title">').append(
-                        $('<p>',
-                            {text: data[1]})
-                    ),
-                    $('<td class="source" style="text-align: center">').append(
-                        $('<p>',
-                            {text: data[2]})
-                    ),
-                    $('<td class="category">').append(
-                        $('<p>',
-                            {text: data[3].replace('{', '').replace('}', '')})
-                    ),
-                    $('<td class="tag">').append(
-                        $('<p>',
-                            {text: data[4]})
-                    ),
-                    $('<td class="display" style="text-align: center">').append(
-                        $('<input type="checkbox" name="myCheckbox" onclick="change_display(this)"/>'),
-                        $('<p>', {text: data[0]})
-                    ),
-                    $('<td colspan="2" class="edit">').append(
-                        $('<input type="button" onclick="Edit_Id(this)" value="編輯" style="margin:5%;width:40%;height:100%; float: left">'),
-                        $('<p>', {text: data[0]}),
-                        $('<input type="button" onclick="Delete_Id(this)" value="刪除" style="margin:5%;width:40%;height:100%; float: right">'),
-                        $('<p>', {text: data[0]})
-                    )
-                )
-            );
-            $("td.edit").children("p").css("display", "none");
-            $("td.display").children("p").css("display", "none");
-        }
-    }
+
+
+        // if(data[5] == true) {
+        //     $('.tab').append(
+        //         $('<tr class="append-data">').append(
+        //             $('<td class="title">').append(
+        //                 $('<p>',
+        //                     {text: data[1]})
+        //             ),
+        //             $('<td class="source" style="text-align: center">').append(
+        //                 $('<p>',
+        //                     {text: data[2]})
+        //             ),
+        //             $('<td class="category" style="text-align: center">').append(
+        //                 $('<p>',
+        //                     {text: data[3].replace('{', '').replace('}', '')})
+        //             ),
+        //             $('<td class="tag">').append(
+        //                 $('<p>',
+        //                     {text: data[4]})
+        //             ),
+        //             $('<td class="display" style="text-align: center">').append(
+        //                 $('<input type="checkbox" checked="checked" name="myCheckbox" onclick="change_display(this)"/>'),
+        //                 $('<p>', {text: data[0]}),
+        //                 $('<p>', {text: data[5]})
+        //             ),
+        //             $('<td colspan="2" class="edit">').append(
+                        
+        //                 $('<input type="button" onclick="Edit_Id(this)" value="編輯" style="margin:5%;width:40%; float: left">'),
+        //                 $('<p>', {text: data[0]}),
+        //                 $('<input type="button" onclick="Delete_Id(this)" value="刪除" style="margin:5%;width:40%; float: right">'),
+        //                 $('<p>', {text: data[0]})
+        //             )
+        //         )
+        //     );
+        //     $("td.edit").children("p").css("display", "none");
+        //     $("td.display").children("p").css("display", "none");
+        // }
+        // else{
+        //     $('.tab').append(
+        //         $('<tr class="append-data">').append(
+        //             $('<td class="title">').append(
+        //                 $('<p>',
+        //                     {text: data[1]})
+        //             ),
+        //             $('<td class="source" style="text-align: center">').append(
+        //                 $('<p>',
+        //                     {text: data[2]})
+        //             ),
+        //             $('<td class="category" style="text-align: center">').append(
+        //                 $('<p>',
+        //                     {text: data[3].replace('{', '').replace('}', '')})
+        //             ),
+        //             $('<td class="tag">').append(
+        //                 $('<p>',
+        //                     {text: data[4]})
+        //             ),
+        //             $('<td class="display" style="text-align: center">').append(
+        //                 $('<input type="checkbox" name="myCheckbox" onclick="change_display(this)"/>'),
+        //                 $('<p>', {text: data[0]})
+        //             ),
+        //             $('<td colspan="2" class="edit">').append(
+        //                 $('<input type="button" onclick="Edit_Id(this)" value="編輯" style="margin:5%;width:40%; float: left">'),
+        //                 $('<p>', {text: data[0]}),
+        //                 $('<input type="button" onclick="Delete_Id(this)" value="刪除" style="margin:5%;width:40%; float: right">'),
+        //                 $('<p>', {text: data[0]})
+        //             )
+        //         )
+        //     );
+        //     $("td.edit").children("p").css("display", "none");
+        //     $("td.display").children("p").css("display", "none");
+        // }
+    // }
     function call_data(num) {
         var source_call;
         source_call = source_data;
@@ -292,6 +331,7 @@
                     append_table(element);
                 });
                 $('html,body').animate({ scrollTop: 0 }, 0);
+                $("#search-page").val(num);
             },
             error: function () {
                 alert("錯誤")
