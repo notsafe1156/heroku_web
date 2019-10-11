@@ -31,6 +31,7 @@
     .navbar-brand {
         font-size: xx-large;
     }
+
 </style>
 
 <body>
@@ -88,11 +89,11 @@
                     TAG
                 </th>
 
-                <th width=6% class="display_filter">
+                <th width=2% class="display_filter">
                     顯示
                 </th>
 
-                <th width=8% colspan="2">
+                <th width=12% colspan="2">
 
                 </th>
 
@@ -101,11 +102,14 @@
         </table>
 
         <hr>
-        <table>
+
+        <table id="page-area">
             <tr>
                 <p align="center">
                     <input type="button" onclick="before_clear_table()" id="leftButton" value="before"></input>
-                    <input id="search_page" type="text" onkeydown="search_page()">
+                    <input id="search-page" type="text" onkeydown="search_page()">
+                    <label>/</label>
+                    <label id="total-page"></label>
                     <input type="button" onclick="next_clear_table()" id="rightButton" value="next"></input>
                 </p>
             </tr>
@@ -135,7 +139,7 @@
     final_hash = localStorage.hash;
     user_name =localStorage.user;
     document.getElementById("account").innerHTML = user_name;
-    $(function () {                 <!-- 初始 -->
+    $(function () {                 //<!-- 初始 -->
         var source_text;
         source_text = source_data;
         $.ajax({
@@ -158,6 +162,10 @@
                 $.each(result[0], function (index, element) {
                     append_table(element);
                 });
+
+                $("#total-page").text(all_page);
+                $(".left-bar").css("height", $(".text").height());
+                
             },
             error: function () {
                 alert("錯誤")

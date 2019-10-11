@@ -3,6 +3,14 @@ body {
 }
 
 
+input[type=button] {
+    color: rgba(255, 25, 31, 0.97);
+    background-color:whitesmoke;
+    border: 0;
+    border-radius: 15%;
+    opacity:0.8;
+}
+
 
 .navbar {
     display: flow-root;
@@ -91,7 +99,7 @@ body {
 
 .left-bar {
     width: 12%;
-    height: 100vw;
+    height: 100vh;
     /*position: absolute;*/
     float: left;
     border-right: 1px rgba(192, 192, 192, 0.81) solid;
@@ -147,10 +155,6 @@ body {
     height: 20vh;
 }
 
-.append-data {
-    width: 20vh;
-}
-
 table {
     /*background-color: rgb(255, 255, 255);*/
     /*border-color: whitesmoke;*/
@@ -172,7 +176,7 @@ table {
 
 
 .display_filter {
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 
@@ -191,8 +195,9 @@ h6 {
     margin: 5px;
     width: 50px;
     height: 24px;
-
 }
+
+
 
 .id {
     padding: 10px;
@@ -220,6 +225,11 @@ h6 {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
+.edit input[type=button] {
+
+}
+
 
 .category {
     padding: 10px;
@@ -279,6 +289,10 @@ h6 {
     margin-right: 0;
 }
 
+hr {
+    margin-top: 0;
+}
+
 #search-page {
-    width: 40%;
+    width: 40px;
 }
