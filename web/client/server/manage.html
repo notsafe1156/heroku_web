@@ -369,7 +369,10 @@
     function Delete_Id(e) {
         let DeId = e.nextSibling;
         var DID = DeId.innerHTML;
-        Delete_Data(DID);
+        if (confirm("確認刪除此文章?")) {
+            Delete_Data(DID);
+        }
+        
     }
     function Delete_Data(DID) {
         console.log(DID);
