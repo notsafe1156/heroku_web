@@ -105,6 +105,7 @@
             <tr>
                 <p align="center">
                     <input type="button" onclick="before_clear_table()" id="leftButton" value="before"></input>
+                    <input id="search_page" type="text" onkeydown="search_page()">
                     <input type="button" onclick="next_clear_table()" id="rightButton" value="next"></input>
                 </p>
             </tr>
@@ -134,7 +135,7 @@
     final_hash = localStorage.hash;
     user_name =localStorage.user;
     document.getElementById("account").innerHTML = user_name;
-    $(function () {/*API操作和顯示區  <!--- 初始 --> */
+    $(function () {                 <!-- 初始 -->
         var source_text;
         source_text = source_data;
         $.ajax({
@@ -196,37 +197,76 @@
         change_source();
     }
     function append_table(data) {
-        $('.tab').append(
-            $('<tr class="append-data">').append(
-                $('<td class="title">').append(
-                    $('<p>',
-                        {text: data[1]})
-                ),
-                $('<td class="source" style="text-align: center">').append(
-                    $('<p>',
-                        {text: data[2]})
-                ),
-                $('<td class="category">').append(
-                    $('<p>',
-                        {text: data[3].replace('{', '').replace('}', '')})
-                ),
-                $('<td class="tag">').append(
-                    $('<p>',
-                        {text: data[4]})
-                ),
-                $('<td class="display" style="text-align: center">').append(
-                    $('<p>',
-                        {text: data[5]})
-                ),
-                $('<td colspan="2" class="edit">').append(
-                    $('<input type="button" onclick="Edit_Id(this)" value="編輯" style="margin:5%;width:40%;height:100%; float: left">'),
-                    $('<p>', {text: data[0]}),
-                    $('<input type="button" onclick="Delete_Id(this)" value="刪除" style="margin:5%;width:40%;height:100%; float: right">'),
-                    $('<p>', {text: data[0]})
+        if(data[5] == true) {
+            $('.tab').append(
+                $('<tr class="append-data">').append(
+                    $('<td class="title">').append(
+                        $('<p>',
+                            {text: data[1]})
+                    ),
+                    $('<td class="source" style="text-align: center">').append(
+                        $('<p>',
+                            {text: data[2]})
+                    ),
+                    $('<td class="category">').append(
+                        $('<p>',
+                            {text: data[3].replace('{', '').replace('}', '')})
+                    ),
+                    $('<td class="tag">').append(
+                        $('<p>',
+                            {text: data[4]})
+                    ),
+                    $('<td class="display" style="text-align: center">').append(
+                        $('<input type="checkbox" checked="checked" name="myCheckbox" onclick="change_display(this)"/>'),
+                        $('<p>', {text: data[0]}),
+                        $('<p>', {text: data[5]})
+                    ),
+                    $('<td colspan="2" class="edit">').append(
+                        
+                        $('<input type="button" onclick="Edit_Id(this)" value="編輯" style="margin:5%;width:40%;height:100%; float: left">'),
+                        $('<p>', {text: data[0]}),
+                        $('<input type="button" onclick="Delete_Id(this)" value="刪除" style="margin:5%;width:40%;height:100%; float: right">'),
+                        $('<p>', {text: data[0]})
+                    )
                 )
-            )
-        );
-        $("td.edit").children("p").css("display", "none");
+            );
+            $("td.edit").children("p").css("display", "none");
+            $("td.display").children("p").css("display", "none");
+        }
+        else{
+            $('.tab').append(
+                $('<tr class="append-data">').append(
+                    $('<td class="title">').append(
+                        $('<p>',
+                            {text: data[1]})
+                    ),
+                    $('<td class="source" style="text-align: center">').append(
+                        $('<p>',
+                            {text: data[2]})
+                    ),
+                    $('<td class="category">').append(
+                        $('<p>',
+                            {text: data[3].replace('{', '').replace('}', '')})
+                    ),
+                    $('<td class="tag">').append(
+                        $('<p>',
+                            {text: data[4]})
+                    ),
+                    $('<td class="display" style="text-align: center">').append(
+                        $('<input type="checkbox" name="myCheckbox" onclick="change_display(this)"/>'),
+                        $('<p>', {text: data[0]})
+                    ),
+                    $('<td colspan="2" class="edit">').append(
+                        $('<input type="button" onclick="Edit_Id(this)" value="編輯" style="margin:5%;width:40%;height:100%; float: left">'),
+                        $('<p>', {text: data[0]}),
+                        $('<input type="button" onclick="Delete_Id(this)" value="刪除" style="margin:5%;width:40%;height:100%; float: right">'),
+                        $('<p>', {text: data[0]})
+                    )
+                )
+            );
+            $("td.edit").children("p").css("display", "none");
+            $("td.display").children("p").css("display", "none");
+        }
     }
     function call_data(num) {
         var source_call;
@@ -306,6 +346,40 @@
             )
         }
     }
+    function search_page() {
+        if(event.keyCode === 13 ){
+            if($("#search_page").val() <= all_page) {
+                page = $("#search_page").val();
+                clear_table();
+                page = parseInt(page);
+                call_data(page);
+                $("#search_page").val("");
+            }else{
+                $("#search_page").val("");
+                alert("無此頁數");
+            }
+        }
+    }
+
+    function change_display(e) {
+        let EdId = e.nextSibling;
+        var EID = EdId.innerHTML;
+        var edisplay = e.checked;
+        console.log(edisplay);
+        
+        $.ajax({
+            type:'put',
+            url: 'https://djangotest1156.herokuapp.com/api/RSS/change_display/',
+            data:{
+                "id":EID,
+                "display":edisplay
+            },
+            error: function () {
+                alert("未成功");
+            }
+        });
+    }
+
     function Edit_Id(e) {
         let EdId = e.nextSibling;
         var EID = EdId.innerHTML;
@@ -334,7 +408,7 @@
                 success: function (result) {
                     console.log(result);
                     alert(result);
-                    window.location.reload()
+                    window.location.reload();
                 },
                 error: function (xhr) {
                     alert(xhr)
@@ -343,6 +417,11 @@
         })
     }
     function log_out() {
+        var expire_days = 1; // 過期日期(天)
+        var d = new Date();
+        d.setTime(d.getTime() - (expire_days * 10 * 60 * 1000));
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = "expire_days=ten_minute" + "; " + expires + ";";
         localStorage.clear();
     }
 </script>
