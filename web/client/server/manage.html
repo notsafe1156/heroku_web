@@ -107,7 +107,7 @@
             <tr>
                 <p align="center">
                     <input type="button" onclick="before_clear_table()" id="leftButton" value="before"></input>
-                    <input id="search-page" type="text" onkeydown="search_page()">
+                    <input id="search-page" type="text" onkeydown="search_page()" onfocus ="this.select()">
                     <label>/</label>
                     <label id="total-page"></label>
                     <input type="button" onclick="next_clear_table()" id="rightButton" value="next"></input>
@@ -164,6 +164,7 @@
                 });
 
                 $("#total-page").text(all_page);
+                $("#search-page").val(page);
                 $(".left-bar").css("height", $(".text").height());
                 
             },
