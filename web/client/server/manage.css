@@ -188,7 +188,7 @@ p {
 
 h6 {
     color: white;
-    margin: 0px 0px 0px 0px;
+    margin: 0;
 }
 
 .button {
@@ -204,7 +204,6 @@ h6 {
 .append-data p {
     margin: 5% auto ;
 }
-
 
 /* 
 .id {
