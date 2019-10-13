@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="">
+    <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="update search-page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/client/server/manage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/manage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/client/server/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/manage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -190,13 +189,8 @@
       <workItem from="1570458126093" duration="3623000" />
       <workItem from="1570546715850" duration="3946000" />
       <workItem from="1570592723125" duration="479000" />
-    </task>
-    <task id="LOCAL-00016" summary="update">
-      <created>1569578437522</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1569578437522</updated>
+      <workItem from="1570977835632" duration="532000" />
+      <workItem from="1570980711741" duration="484000" />
     </task>
     <task id="LOCAL-00017" summary="update">
       <created>1569578444906</created>
@@ -534,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570551585170</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="update search-page">
+      <created>1570596260850</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1570596260850</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,7 +579,8 @@
     <MESSAGE value="fix some ui bugs" />
     <MESSAGE value="fix some ui issues" />
     <MESSAGE value="fix the ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix the ui" />
+    <MESSAGE value="update search-page" />
+    <option name="LAST_COMMIT_MESSAGE" value="update search-page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="567" y="347" key="FileChooserDialogImpl" />

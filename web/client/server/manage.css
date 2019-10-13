@@ -67,7 +67,7 @@ input[type=button] {
 /*}*/
 
 .search-bar input {
-    height: 35px;
+    height: 55px;
 }
 
 #source_filter {
@@ -199,8 +199,6 @@ h6 {
 
 .append-data td {
     padding: 0;
-    height: 15vh;
-    
 }
 
 .append-data p {
@@ -280,7 +278,7 @@ h6 {
 } */
 
 .edit input {
-    height: 60%;
+    height: 5vh;
     margin: 0 5%;
 }
 
