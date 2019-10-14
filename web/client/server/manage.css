@@ -3,6 +3,11 @@ body {
 }
 
 
+a.navbar-brand{
+    font-size: xx-large;
+}
+
+
 input[type=button] {
     color: rgba(255, 25, 31, 0.97);
     background-color:whitesmoke;
@@ -276,10 +281,43 @@ h6 {
     text-overflow: ellipsis;
 } */
 
+.edit-area {
+    height: 12vh;
+    width: 100%;
+}
+
+
 .edit input {
     height: 5vh;
     margin: 0 5%;
+    width: 150px;
 }
+
+.edit-area {
+    display: none;
+}
+.edit-area button {
+    height: 5vh;
+    width: 5%;
+    margin: 0 5%;
+    color: rgba(255, 25, 31, 0.97);
+    background-color:whitesmoke;
+    border: 0;
+    border-radius: 15%;
+    opacity:0.8;
+
+}
+
+.edit-area label{
+    width: 45px;
+    margin-left: 3%;
+}
+
+.edit-area input {
+    margin: 1% 0;
+    width: 40%;
+}
+
 
 
 .ui-widget-header { border: 1px solid #aaaaaa; background-color:red; color: #222222; font-weight: bold; }

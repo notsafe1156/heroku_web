@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="update search-page" />
+    <list default="true" id="fb844d22-342f-4902-994a-633025f8f2a3" name="Default Changelist" comment="update update_page">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/server/manage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/manage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client/server/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/client/server/manage.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,17 +82,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client" />
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
+      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client\server" />
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client" />
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\server" />
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
       <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web\client" />
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page" />
-      <recent name="D:\Etaac\Documents\code\Git\GitHub\admin_page\web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -188,14 +192,9 @@
       <workItem from="1570592723125" duration="479000" />
       <workItem from="1570977835632" duration="532000" />
       <workItem from="1570980711741" duration="484000" />
-      <workItem from="1570981326638" duration="555000" />
-    </task>
-    <task id="LOCAL-00017" summary="update">
-      <created>1569578444906</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1569578444906</updated>
+      <workItem from="1570981326638" duration="812000" />
+      <workItem from="1571039894539" duration="7224000" />
+      <workItem from="1571055876039" duration="3501000" />
     </task>
     <task id="LOCAL-00018" summary="update">
       <created>1569737425783</created>
@@ -533,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570596260850</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="update ui">
+      <created>1570982080653</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1570982080653</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,7 +584,9 @@
     <MESSAGE value="fix some ui issues" />
     <MESSAGE value="fix the ui" />
     <MESSAGE value="update search-page" />
-    <option name="LAST_COMMIT_MESSAGE" value="update search-page" />
+    <MESSAGE value="update ui" />
+    <MESSAGE value="update update_page" />
+    <option name="LAST_COMMIT_MESSAGE" value="update update_page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="567" y="347" key="FileChooserDialogImpl" />
