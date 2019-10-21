@@ -31,8 +31,8 @@
 
 
 </style>
-
 <body>
+
     <nav class="navbar">
         <a class="navbar-brand" href="manage.html">後臺管理系統</a>
         <!--        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"-->
@@ -120,6 +120,9 @@
 <script src="jquery-3.4.1.js"></script>
 
 <script>
+    var x = document.cookie.indexOf("expire_days=");
+
+
     var test_page = localStorage.getItem("record_page");
     if (test_page == null) {
         page = 1;
@@ -137,7 +140,16 @@
     final_hash = localStorage.hash;
     user_name = localStorage.user;
     document.getElementById("account").innerHTML = user_name;
-    $(function () {                 //<!-- 初始 -->
+
+    if(x == -1){
+        $("#logout").click();
+        window.location.href = "login.html";
+    }else{
+        start();
+    }
+
+
+    function start() {                 //<!-- 初始 -->
         var source_text;
         source_text = source_data;
         $.ajax({
@@ -170,10 +182,10 @@
                 alert("錯誤")
             }
         });
-    });
+    }
 
     function enter_search_text() {
-        if (event.keyCode == 13) {
+        if (event.keyCode === 13) {
             search_text();
         }
     }
@@ -241,11 +253,12 @@
             $('<tr class="edit-area" >').append(
                 $('<td colspan="7" class="edit-info">').append(
                     $('<label>類別:</label>'),
-                    $('<input type="text" class="edit-category">'),
+                    $('<input type="text" onkeydown="edit_enter(this)" class="edit-category">'),
                     '<br>',
                     $('<label>tag:</label>'),
-                    $('<input type="text" class="edit-tag">'),
-                    $('<button type="button" onclick="send_edit(this)">確定</button>')
+                    $('<input type="text" onkeydown="edit_enter(this)" class="edit-tag">'),
+                    $('<button type="button" class="edit-button" onclick="send_edit(this)">確定</button>')
+
                 )
             )
         );
@@ -343,14 +356,14 @@
 
     function search_page() {
         if (event.keyCode === 13) {
-            if ($("#search_page").val() <= all_page) {
-                page = $("#search_page").val();
+            if ($("#search-page").val() <= all_page) {
+                page = $("#search-page").val();
                 clear_table();
                 page = parseInt(page);
                 call_data(page);
-                $("#search_page").val("");
+                $("#search-page").val("");
             } else {
-                $("#search_page").val("");
+                $("#search-page").val("");
                 alert("無此頁數");
             }
         }
@@ -392,21 +405,25 @@
     }
 
     function send_edit(e) {
-        $.ajax({
-            type: 'put',
-            url: 'https://djangotest1156.herokuapp.com/api/RSS/update_text/',
-            data: {
-                'id': $(e).parents().prev('.append-data').children('.edit').children('p').text(),
-                'category': $($(e).siblings('input')[0]).val(),
-                'tag': $($(e).siblings('input')[1]).val()
-            },
-            success: function () {
-                location.reload();
-            },
-            error: function (xml) {
-                alert(xml);
-            }
-        });
+            $.ajax({
+                type: 'put',
+                url: 'https://djangotest1156.herokuapp.com/api/RSS/update_text/',
+                data: {
+                    'id': $(e).parents().prev('.append-data').children('.edit').children('p').text(),
+                    'category': $($(e).siblings('input')[0]).val(),
+                    'tag': $($(e).siblings('input')[1]).val()
+                },
+                success: function () {
+                    localStorage.setItem("record_page", page);
+                    localStorage.setItem("record_source", source_data);
+                    $(".edit-area").hide();
+                    $(e).parents().prev('.append-data').children('.category').children('p').text($($(e).siblings('input')[0]).val());
+                    $(e).parents().prev('.append-data').children('.tag').children('p').text($($(e).siblings('input')[1]).val());
+                },
+                error: function (xml) {
+                    alert(xml);
+                }
+            });
     }
 
     function Delete_Id(e) {
@@ -443,12 +460,23 @@
     }
 
     function log_out() {
-        var expire_days = 1; // 過期日期(天)
+        var expire_days = 1; // 過期日期(分)
         var d = new Date();
-        d.setTime(d.getTime() - (expire_days * 10 * 60 * 1000));
+        d.setTime(d.getTime() - (expire_days  * 60 * 1000));
         var expires = "expires=" + d.toGMTString();
         document.cookie = "expire_days=ten_minute" + "; " + expires + ";";
         localStorage.clear();
     }
+
+function edit_enter(e){
+        var haha = $(e).siblings('button');
+        if (event.keyCode ===13){
+            $(haha).click();
+        }
+}
+
+
+
+
 </script>
 </html>
